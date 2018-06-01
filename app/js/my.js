@@ -185,34 +185,46 @@ $(document).ready(function () {
 
 $(window).on('load', function () {
 
-    var $itemSmall = $(".containerH1-itemSmall");
+    $(window).resize(function() {
+        if($(window).width() < 860) {
 
-    var $itemSmallTypes = $(".containerH1-itemSmall__types");
-    var $itemSmallTypesH1 = $(".containerH1-itemSmall__types h1");
-    var $itemSmallTypesP = $(".containerH1-itemSmall__types p");
-    var $itemSmallTransform = $(".transform-know-more-itemSmall");
+            var $itemSmall = $(".containerH1-itemSmall");
 
-    // var $itemSmallTypesJS = (".itemSmallTypesJS");
-    // var $itemSmallTypesH1JS = (".itemSmallTypesH1JS");
-    // var $itemSmallTypesPJS = (".itemSmallTypesPJS");
-    // var $itemSmallTransformJS = (".itemSmallTransformJS");
+            var $itemSmallTypes = $(".containerH1-itemSmall__types");
+            var $itemSmallTypesH1 = $(".containerH1-itemSmall__types h1");
+            var $itemSmallTypesP = $(".containerH1-itemSmall__types p");
+            var $itemSmallTransform = $(".containerH1-itemSmall__types .transform-know-more-itemSmall");
 
-    $itemSmall.on('touchstart', function () {
+            var $itemBig = $(".containerH1-itemBig");
 
-        $itemSmallTypes.toggleClass("itemSmallTypesJS");
+            var $itemBigTypes = $(".containerH1-itemBig__types");
+            var $itemBigTypesH1 = $(".containerH1-itemBig__types h1");
+            var $itemBigTypesP = $(".containerH1-itemBig__types p");
+            var $itemBigTransform = $(".containerH1-itemBig__types.transform-know-more-itemSmall");
 
-        //$itemSmallTypesH1.css({"opacity":"1","margin-top":"200px"});
-        //$itemSmallTypesH1.css({"opacity":"1" , "margin-top":"100px"});
+            $itemSmall.on('touchstart', function () {
 
-        $itemSmallTypesH1.toggleClass("itemSmallTypesH1JS");
+                $itemSmallTypes.toggleClass("itemSmallTypesJS");
+                $itemSmallTypesH1.toggleClass("itemSmallTypesH1JS");
+                $itemSmallTypesP.toggleClass("itemSmallTypesPJS");
+                $itemSmallTransform.toggleClass("itemSmallTransformJS");
 
-        //$itemSmallTypesP.css({"opacity":"1" , "margin-left":"100px"});
-        $itemSmallTypesP.toggleClass("itemSmallTypesPJS");
+                return false;
 
-        $itemSmallTransform.toggleClass("itemSmallTransformJS");
+            });
 
-        return false;
+            $itemBig.on('touchstart', function () {
 
+                $itemSmallTypes.toggleClass("itemSmallTypesJS");
+                $itemSmallTypesH1.toggleClass("itemSmallTypesH1JS");
+                $itemSmallTypesP.toggleClass("itemSmallTypesPJS");
+                $itemSmallTransform.toggleClass("itemSmallTransformJS");
+
+                return false;
+
+            });
+
+        }
     });
 
 });
