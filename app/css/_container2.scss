@@ -206,9 +206,7 @@
     position: absolute;
     z-index: 0;
     height: calc(100% - 30px);
-    //width: calc(100% - 30px);
-    //height: 100%;
-    width: 100%;
+    width: calc(100% - 30px);
     padding-top: 138px;
     padding-left: 39px;
     background-color: transparent;
@@ -307,9 +305,7 @@
   &__types{
     position: absolute;
     height: calc(100% - 30px);
-    //width: calc(100% - 30px);
-    //height: 100%;
-    width: 100%;
+    width: calc(100% - 30px);
     padding-top: 138px;
     padding-left: 39px;
     background-color: transparent;
