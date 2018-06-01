@@ -215,10 +215,10 @@ $(window).on('load', function () {
 
             $itemBig.on('touchstart', function () {
 
-                $itemSmallTypes.toggleClass("itemSmallTypesJS");
-                $itemSmallTypesH1.toggleClass("itemSmallTypesH1JS");
-                $itemSmallTypesP.toggleClass("itemSmallTypesPJS");
-                $itemSmallTransform.toggleClass("itemSmallTransformJS");
+                $itemBigTypes.toggleClass("itemSmallTypesJS");
+                $itemBigTypesH1.toggleClass("itemSmallTypesH1JS");
+                $itemBigTypesP.toggleClass("itemSmallTypesPJS");
+                $itemBigTransform.toggleClass("itemSmallTransformJS");
 
                 return false;
 
