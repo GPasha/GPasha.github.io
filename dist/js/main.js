@@ -18629,6 +18629,7 @@ $(document).ready(function () {
 
 });
 
+
 $(window).load(function () {
     // Группы объектов
     var groups = [
@@ -18732,36 +18733,4 @@ $(window).load(function () {
         // Выставляем масштаб карты чтобы были видны все группы.
         myMap.setBounds(myMap.geoObjects.getBounds());
     }
-});
-
-
-// Делаем анимацию блоков для мобильных устройств.
-
-$(window).on('load', function () {
-
-    var $itemSmall = (".containerH1-itemSmall");
-
-    var $itemSmallTypes = (".containerH1-itemSmall__types");
-    var $itemSmallTypesH1 = (".containerH1-itemSmalltypes a h1");
-    var $itemSmallTypesP = (".containerH1-itemSmal__types p");
-    var $itemSmallTransform = (".containerH1-itemSmall__types .transform-know-more-itemSmall");
-
-    <!-- var $itemSmallTypesJS = (".itemSmallTypesJS");
-    var $itemSmallTypesH1JS = (".itemSmallTypesH1JS");
-    var $itemSmallTypesPJS = (".itemSmallTypesPJS");
-    var $itemSmallTransformJS = (".itemSmallTransformJS");
- -->
-    $itemSmall.on('touch', function () {
-
-        $itemSmallTypes.toggleClass("itemSmallTypesJS");
-
-        $itemSmallTypesH1.toggleClass("itemSmallTypesH1JS");
-
-        $itemSmallTypesP.toggleClass("itemSmallTypesPJS");
-
-        $itemSmallTransform.toggleClass("itemSmallTransformJS");
-
-        return false;
-
-    });
 });

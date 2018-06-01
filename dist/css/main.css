@@ -10639,11 +10639,25 @@ h3 {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
     opacity: 1; }
+  .containerH1-itemSmall:active .containerH1-itemSmall__types {
+    background-color: rgba(133, 145, 145, 0.8); }
+  .containerH1-itemSmall:active .containerH1-itemSmall__types a h1 {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1; }
+  .containerH1-itemSmall:active .containerH1-itemSmall__types p {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1; }
+  .containerH1-itemSmall:active .containerH1-itemSmall__types .transform-know-more-itemSmall {
+    -webkit-transform: translate(0, 0);
+            transform: translate(0, 0);
+    opacity: 1; }
   .containerH1-itemSmall__types {
     position: absolute;
     z-index: 0;
     height: calc(100% - 30px);
-    width: calc(100% - 30px);
+    width: 100%;
     padding-top: 138px;
     padding-left: 39px;
     background-color: transparent;
@@ -10662,9 +10676,7 @@ h3 {
       -webkit-transform: translate(0, 400px);
               transform: translate(0, 400px);
       opacity: 0;
-      transition: opacity 0.6s ease, -webkit-transform 0.6s ease;
-      transition: transform 0.6s ease, opacity 0.6s ease;
-      transition: transform 0.6s ease, opacity 0.6s ease, -webkit-transform 0.6s ease;
+      transition: all 0.6s ease;
       transition-delay: 0.05s; }
       @media (max-width: 860px) {
         .containerH1-itemSmall__types a h1 {
@@ -10734,7 +10746,7 @@ h3 {
   .containerH1-itemBig__types {
     position: absolute;
     height: calc(100% - 30px);
-    width: calc(100% - 30px);
+    width: 100%;
     padding-top: 138px;
     padding-left: 39px;
     background-color: transparent;
