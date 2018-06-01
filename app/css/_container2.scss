@@ -156,27 +156,42 @@
     max-width: 100%;
   }
   a{
-    &:hover &__types{
-      background-color: $background-item;
-    }
-    &:hover &__types h1{
-      transform: translate(0,0);
-      opacity: 1;
-    }
-    &:hover &__types p{
-      transform: translate(0,0);
-      opacity: 1;
-    }
-    &:hover &__types .transform-know-more-itemSmall{
-      transform: translate(0,0);
-      opacity: 1;
-    }
-
+    //&:hover &__types{
+    //  background-color: $background-item;
+    //}
+    //&:hover &__types h1{
+    //  transform: translate(0,0);
+    //  opacity: 1;
+    //}
+    //&:hover &__types p{
+    //  transform: translate(0,0);
+    //  opacity: 1;
+    //}
+    //&:hover &__types .transform-know-more-itemSmall{
+    //  transform: translate(0,0);
+    //  opacity: 1;
+    //}
+    //
+    //&:active &__types{
+    //  background-color: $background-item;
+    //}
+    //&:active &__types h1{
+    //  transform: translate(0,0);
+    //  opacity: 1;
+    //}
+    //&:active &__types p{
+    //  transform: translate(0,0);
+    //  opacity: 1;
+    //}
+    //&:active &__types .transform-know-more-itemSmall{
+    //  transform: translate(0,0);
+    //  opacity: 1;
+    //}
 
     &:focus &__types{
       background-color: $background-item;
     }
-    &:focus &__types a h1{
+    &:focus &__types h1{
       transform: translate(0,0);
       opacity: 1;
     }
@@ -185,22 +200,6 @@
       opacity: 1;
     }
     &:focus &__types .transform-know-more-itemSmall{
-      transform: translate(0,0);
-      opacity: 1;
-    }
-
-    &:active &__types{
-      background-color: $background-item;
-    }
-    &:active &__types h1{
-      transform: translate(0,0);
-      opacity: 1;
-    }
-    &:active &__types p{
-      transform: translate(0,0);
-      opacity: 1;
-    }
-    &:active &__types .transform-know-more-itemSmall{
       transform: translate(0,0);
       opacity: 1;
     }
