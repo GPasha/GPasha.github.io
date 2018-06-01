@@ -1,0 +1,63 @@
+$title-grey-color:#606060;
+
+.benefit-title{
+  color: $title-grey-color;
+  font-family: $font-family-base;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 30px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 60px;
+  @media (max-width: 1371.98px){
+    line-height: 38px;
+    margin-bottom: 10px;
+  }
+  @media (max-width: 712px){
+    font-size: 30px;
+    margin-bottom: 0;
+  }
+  @media (max-width: 400px){
+    font-size: 24px;
+  }
+  @include mobile-all() {
+    margin-top: 15px;
+  }
+  span{
+    color: $red;
+  }
+}
+.benefit-item{
+    background-color: $background-third-header;
+    padding: 20px;
+    color: $white-color;
+    font-family: $font-family-base;
+    font-weight: 400;
+    min-height: 330px;
+    height: 100%;
+    margin-top: 15px;
+  @media (max-width: 1199.98px){
+    text-align: center;
+    min-height: 211px;
+  }
+  @media (max-width: 767.98px){
+    text-align: center;
+    min-height: 176px;
+  }
+    &__title{
+      font-size: 24px;
+      margin-bottom: 10px;
+      @media (max-width: 370px){
+        font-size: 21px;
+      }
+    }
+    &__text{
+      font-size: 18px;
+      line-height: 30px;
+      @media (max-width: 370px){
+        font-size: 16px;
+        line-height: 25px;
+      }
+    }
+}

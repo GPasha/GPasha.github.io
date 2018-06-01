@@ -1,0 +1,809 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<!-- META -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<html lang="en">
+	
+	
+		<!-- FAVICON -->
+		<link rel="icon" type="image/x-icon" href="favicon.ico" >
+		<link rel="icon" type="image/png" href="favicon.png" type="image/x-icon">
+	
+	
+		<!-- SEO -->
+		<meta name="description" content="">
+		<meta name="rating" content="">
+		<meta name="author" content="">
+		<meta name="robots" content="index,follow">
+	
+		<!-- CONFIG -->
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	
+		<!-- Tweeter card -->
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="@site_account">
+		<meta name="twitter:creator" content="@individual_account">
+		<meta name="twitter:url" content="https://example.com/page.html">
+		<meta name="twitter:title" content="Content Title">
+		<meta name="twitter:description" content="Content description less than 200 characters">
+		<meta name="twitter:image" content="https://example.com/image.jpg">
+	
+	
+		<!-- Facebook card -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://example.com/page.html">
+		<meta property="og:title" content="Content Title">
+		<meta property="og:image" content="https://example.com/image.jpg">
+		<meta property="og:description" content="Description Here">
+		<meta property="og:site_name" content="Site Name">
+		<meta property="og:locale" content="en_US">
+	
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/main.css">
+	
+		<title>nobilia</title>
+	
+	
+		<!--JAVASCRIPT-->
+		<script src="https://yandex.st/jquery/2.2.3/jquery.min.js" type="text/javascript"></script>
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	
+	</head>
+
+<body>
+    <div id="top-anchor"></div>
+
+	<!--[if lt IE 10]>
+	<p class="browsehappy">Вы используете <strong>УСТАРЕВШИЙ Internet Explorer</strong> браузер. Пожалуйста, <a href="http://browsehappy.com/">обновите ваш Браузер</a> чтобы увидеть больше возможностей на сайтах!</p>
+	<![endif]-->
+
+	<svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+	    <symbol id="icon-home" viewBox="0 0 576 512">
+	        <path fill="currentColor"
+	              d="M488 312.7V456c0 13.3-10.7 24-24 24H348c-6.6 0-12-5.4-12-12V356c0-6.6-5.4-12-12-12h-72c-6.6 0-12 5.4-12 12v112c0 6.6-5.4 12-12 12H112c-13.3 0-24-10.7-24-24V312.7c0-3.6 1.6-7 4.4-9.3l188-154.8c4.4-3.6 10.8-3.6 15.3 0l188 154.8c2.7 2.3 4.3 5.7 4.3 9.3zm83.6-60.9L488 182.9V44.4c0-6.6-5.4-12-12-12h-56c-6.6 0-12 5.4-12 12V117l-89.5-73.7c-17.7-14.6-43.3-14.6-61 0L4.4 251.8c-5.1 4.2-5.8 11.8-1.6 16.9l25.5 31c4.2 5.1 11.8 5.8 16.9 1.6l235.2-193.7c4.4-3.6 10.8-3.6 15.3 0l235.2 193.7c5.1 4.2 12.7 3.5 16.9-1.6l25.5-31c4.2-5.2 3.4-12.7-1.7-16.9z"
+	              class=""></path>
+	    </symbol>
+	    <symbol id="icon-search" viewBox="0 0 512 512">
+	        <path fill="currentColor"
+	              d="M508.5 468.9L387.1 347.5c-2.3-2.3-5.3-3.5-8.5-3.5h-13.2c31.5-36.5 50.6-84 50.6-136C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c52 0 99.5-19.1 136-50.6v13.2c0 3.2 1.3 6.2 3.5 8.5l121.4 121.4c4.7 4.7 12.3 4.7 17 0l22.6-22.6c4.7-4.7 4.7-12.3 0-17zM208 368c-88.4 0-160-71.6-160-160S119.6 48 208 48s160 71.6 160 160-71.6 160-160 160z"
+	              class=""></path>
+	    </symbol>
+	    <symbol id="icon-pin" viewBox="0 0 384 512">
+	        <path fill="currentColor"
+	              d="M298.028 214.267L285.793 96H328c13.255 0 24-10.745 24-24V24c0-13.255-10.745-24-24-24H56C42.745 0 32 10.745 32 24v48c0 13.255 10.745 24 24 24h42.207L85.972 214.267C37.465 236.82 0 277.261 0 328c0 13.255 10.745 24 24 24h136v104.007c0 1.242.289 2.467.845 3.578l24 48c2.941 5.882 11.364 5.893 14.311 0l24-48a8.008 8.008 0 0 0 .845-3.578V352h136c13.255 0 24-10.745 24-24-.001-51.183-37.983-91.42-85.973-113.733z"
+	              class=""></path>
+	    </symbol>
+	    <symbol id="icon-list" viewBox="0 0 384 512">
+	        <path fill="currentColor"
+	              d="M280 240H168c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8zm0 96H168c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8zM112 232c-13.3 0-24 10.7-24 24s10.7 24 24 24 24-10.7 24-24-10.7-24-24-24zm0 96c-13.3 0-24 10.7-24 24s10.7 24 24 24 24-10.7 24-24-10.7-24-24-24zM336 64h-80c0-35.3-28.7-64-64-64s-64 28.7-64 64H48C21.5 64 0 85.5 0 112v352c0 26.5 21.5 48 48 48h288c26.5 0 48-21.5 48-48V112c0-26.5-21.5-48-48-48zM192 48c8.8 0 16 7.2 16 16s-7.2 16-16 16-16-7.2-16-16 7.2-16 16-16zm144 408c0 4.4-3.6 8-8 8H56c-4.4 0-8-3.6-8-8V120c0-4.4 3.6-8 8-8h40v32c0 8.8 7.2 16 16 16h160c8.8 0 16-7.2 16-16v-32h40c4.4 0 8 3.6 8 8v336z"
+	              class=""></path>
+	    </symbol>
+	    <symbol id="icon-calc" viewBox="0 0 448 512">
+	        <path fill="currentColor"
+	              d="M0 464V48C0 21.49 21.49 0 48 0h352c26.51 0 48 21.49 48 48v416c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48zm384-284V76c0-6.627-5.373-12-12-12H76c-6.627 0-12 5.373-12 12v104c0 6.627 5.373 12 12 12h296c6.627 0 12-5.373 12-12zM128 308v-40c0-6.627-5.373-12-12-12H76c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12zm256 128V268c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v168c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12zm-256 0v-40c0-6.627-5.373-12-12-12H76c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12zm128-128v-40c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12zm0 128v-40c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v40c0 6.627 5.373 12 12 12h40c6.627 0 12-5.373 12-12z"
+	              class=""></path>
+	    </symbol>
+	    <symbol id="icon-angle-up" viewBox="0 0 320 512">
+	        <path fill="currentColor"
+	              d="M168.5 164.2l148 146.8c4.7 4.7 4.7 12.3 0 17l-19.8 19.8c-4.7 4.7-12.3 4.7-17 0L160 229.3 40.3 347.8c-4.7 4.7-12.3 4.7-17 0L3.5 328c-4.7-4.7-4.7-12.3 0-17l148-146.8c4.7-4.7 12.3-4.7 17 0z"
+	              class=""></path>
+	    </symbol>
+	    <symbol id="icon-nav-toggle" viewBox="0 0 448 512">
+	        <path fill="currentColor"
+	              d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"
+	              class=""></path>
+	    </symbol>
+	</svg>
+
+    <section class="wr-header">
+        <div class="container">
+            <!--MENU-->
+            <nav class="navbar navbar-expand-xl bg-white">
+                <a class="navbar-brand" href="index.html">
+                    <img class="img-fluid" src="img/logo_de.png">
+                </a>
+            
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Navigation">
+                    <svg width="28" height="28"><use xlink:href="#icon-nav-toggle"></use></svg>
+                </button>
+            
+                <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="index.html">
+                                <img class="d-none d-xl-block" src="img/icons/icon-home.png" alt="">
+                                <span class="d-inline-block d-xl-none">Главная</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="catalog.html">Каталог</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Типы кухонь</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">9 ценовых категорий</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="vstraivaemaya-tehnika.html">Встраиваемая техника</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                nobilia
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item" href="nobilia.html">nobilia</a>
+                                <a class="dropdown-item" href="#">Производство</a>
+                                <a class="dropdown-item" href="#">Компетенции и факты</a>
+                                <a class="dropdown-item" href="#">Внутренняя фурнитура</a>
+                                <a class="dropdown-item" href="#">Эргономика</a>
+                                <a class="dropdown-item" href="#">Видео коллекция</a>
+                                <a class="dropdown-item" href="#">Sale</a>
+                                <a class="dropdown-item" href="#">Доставка и оплата</a>
+                                <a class="dropdown-item" href="#">Контакты</a>
+                            </div>
+                        </li>
+                    </ul>
+            
+                </div>
+            
+                <div class="navbar__search">
+                    <a data-toggle="collapse" href="#searchCollapse" role="button" aria-expanded="false" aria-controls="searchCollapse">
+                        <svg width="24" height="24"><use xlink:href="#icon-search"></use></svg>
+                    </a>
+                </div>
+            
+                <div class="navbar__contacts">
+                    <a class="navbar__contacts__phone text-dark d-block mb-2" href="tel:+7 (863) 299-44-53">+7 (863) 299-44-53</a>
+                    <span class="navbar__contacts__location small">Красноармейская 103/123</span>
+                </div>
+            
+                <div id="searchCollapse" class="collapse navbar-search-collapse">
+                    <div class="container py-4">
+                        <div class="input-group">
+                            <input id="q" name="q" class="form-control" placeholder="Найти...">
+                            <div class="input-group-append">
+                                <button class="btn btn-sm btn-outline-primary" type="submit">Найти</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+    </section>
+
+
+	<!--TOP INTRO-->
+	<link rel="stylesheet" href="../css/_swipebox.scss">
+	<aside class="wr-flying-nav">
+	    <div class="wr-flying-nav__links d-flex flex-column">
+	        <a class="icon icon-plan" href="#">
+	            <svg width="32" height="32" data-toggle="tooltip" data-placement="left" title="Список сравнения"><use xlink:href="#icon-list"></use></svg>
+	        </a>
+	        <a class="icon icon-pin" href="#">
+	            <svg width="32" height="32" data-toggle="tooltip" data-placement="left" title="Избранное"><use xlink:href="#icon-pin"></use></svg>
+	        </a>
+	        <a class="icon icon_pulse icon-calc" href="#">
+	            <svg width="32" height="32" data-toggle="tooltip" data-placement="left" title="Заказать просчёт"><use xlink:href="#icon-calc"></use></svg>
+	        </a>
+	    </div>
+	    <div class="wr-flying-nav__gototop">
+	        <a class="icon icon-next-big" href="#top-anchor"><svg width="32" height="32"><use xlink:href="#icon-angle-up"></use></svg></a>
+	    </div>
+	</aside>
+	
+	<section class="wr-topintro" style="background-image: url(img/main-top-01.jpg);">
+	    <div class="container">
+	        <div class="topintro">
+	            <div class="topintro__slogan">
+	                <div class="topintro__header">
+	                    <p>НЕМЕЦКОЕ КАЧЕСТВО ПО ДОСТУПНОЙ ЦЕНЕ - ЭТО ВОЗМОЖНО!</p>
+	                </div>
+	                <div class="topintro__text">
+	                    <p>9 ЦЕНОВЫХ КАТЕГОРИЙ - УЗНАТЬ БОЛЬШЕ</p>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+
+	<!--CONTAINER2-->
+	<section class="wrapper">
+	
+	
+	    <div class="container-fluid">
+	        <div class="containerH1-margin-block row d-flex justify-content-center flex-wrap">
+	
+	            <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+	                <div class="containerH1-itemSmall" style="background-image: url(&quot img/main-img/kot-1960------.jpg&quot);
+	                background-size:cover;">
+	                    <div class="containerH1-itemSmall__types aboutKitchen">
+	                        <a href="#"><h1>О кухнях nobilia</h1></a>
+	                        <p>Покупатели более 90 стран отдают
+	                            предпочтение кухням nobilia. Объёмы
+	                            производства превысили 3000 кухонь в
+	                            день и каждая индивидуальна как и её
+	                            хозяин! Два крупнейшей завода в Европе
+	                            расположенных в Восточной Вестфалии,
+	                            Германия.</p>
+	                        <div class="know-more transform-know-more-itemSmall aboutKitchenBottom">
+	                            <a class="know-more__link" href="#">
+	                                <div class="know-more__link__title">Узнать больше</div>
+	                                <div class="know-more__link__img">
+	                                    <img src="img/icons/icon-right-big.png" alt="Компания nobilia">
+	                                </div>
+	                            </a>
+	                        </div>
+	                    </div>
+	                    <div class="itemBottom d-flex align-items-center justify-content-start">
+	                        <a href="#" class="itemBottom__link">
+	                            <h1 class="itemBottom__link__title">Дизайнеры и архитекторы</h1>
+	                            <div class="itemBottom__link__img">
+	                                <img src="img/icons/icon-right-big.png" alt="Компания nobilia">
+	                            </div>
+	                        </a>
+	                    </div>
+	                </div>
+	            </div>
+	
+	            <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
+	                <div class="containerH1-itemBig" style="background-image: url(&quot img/main-img/produkte.jpg&quot);
+	                background-size:cover;">
+	                    <div class="containerH1-itemBig__types">
+	                        <a href="#"><h1>Типы кухонь</h1></a>
+	                        <p>Откройте для себя свою коллекцию</p>
+	                        <div class="know-more transform-know-more typesKitchenBottom">
+	                            <a class="know-more__link" href="#">
+	                                <div class="know-more__link__title">Узнать больше</div>
+	                                <div class="know-more__link__img">
+	                                    <img src="img/icons/icon-right-big.png" alt="Компания nobilia">
+	                                </div>
+	                            </a>
+	                        </div>
+	                    </div>
+	                    <div class="itemBottom itemBottomBG d-flex align-items-center justify-content-start">
+	                        <a href="#" class="itemBottom__link">
+	                            <h1 class="itemBottom__link__title">Типы кухонь</h1>
+	                            <div class="itemBottom__link__img">
+	                                <img src="img/icons/icon-right-big.png" alt="Компания nobilia">
+	                            </div>
+	                        </a>
+	                    </div>
+	                </div>
+	            </div>
+	
+	            <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12">
+	                <div class="containerH1-itemBig" style="background-image: url(&quot img/main-img/services.jpg &quot);
+	                background-size:cover;">
+	                    <div class="containerH1-itemBig__types">
+	                        <a href="#"><h1>Эргономика</h1></a>
+	                        <p>24 различных рабочих высот обеспечивают эргономичный дизайн кухни.</p>
+	                        <div class="know-more transform-know-more ergonomicsBottom">
+	                            <a class="know-more__link" href="#">
+	                                <div class="know-more__link__title">Узнать больше</div>
+	                                <div class="know-more__link__img">
+	                                    <img src="img/icons/icon-right-big.png" alt="Компания nobilia">
+	                                </div>
+	                            </a>
+	                        </div>
+	                    </div>
+	                    <div class="itemBottom d-flex align-items-center justify-content-start">
+	                        <a href="#" class="itemBottom__link">
+	                            <h1 class="itemBottom__link__title">Эргономика</h1>
+	                            <div class="itemBottom__link__img">
+	                                <img src="img/icons/icon-right-big.png" alt="Компания nobilia">
+	                            </div>
+	                        </a>
+	                    </div>
+	                </div>
+	            </div>
+	
+	            <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12">
+	                <div class="containerH1-itemSmall" style="background-image: url(&quot img/main-img/compamy.jpg&quot);
+	                background-size:cover;">
+	                    <div class="containerH1-itemSmall__types aboutKitchen">
+	                        <a href="#"><h1>О кухнях nobilia</h1></a>
+	                        <p>Покупатели более 90 стран отдают
+	                            предпочтение кухням nobilia. Объёмы
+	                            производства превысили 3000 кухонь в
+	                            день и каждая индивидуальна как и её
+	                            хозяин! Два крупнейшей завода в Европе
+	                            расположенных в Восточной Вестфалии,
+	                            Германия.
+	                        </p>
+	                        <div class="know-more transform-know-more-itemSmall aboutKitchenBottom">
+	                            <a class="know-more__link" href="#">
+	                                <div class="know-more__link__title">Узнать больше</div>
+	                                <div class="know-more__link__img">
+	                                    <img src="img/icons/icon-right-big.png" alt="Компания nobilia">
+	                                </div>
+	                            </a>
+	                        </div>
+	                    </div>
+	                    <div class="itemBottom d-flex align-items-center justify-content-start">
+	                        <a href="#" class="itemBottom__link">
+	                            <h1 class="itemBottom__link__title">Компания nobilia</h1>
+	                            <div class="itemBottom__link__img">
+	                                <img src="img/icons/icon-right-big.png" alt="Компания nobilia">
+	                            </div>
+	                        </a>
+	                    </div>
+	                </div>
+	            </div>
+	            <!--<div class="d-flex justify-content-center col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 mb-5">-->
+	                <!--<form name="form"  method="post" class="containerH1-itemSmall form">-->
+	                    <!--<div class="form__title"><h2>Бесплатный дизайн-проект</h2></div>-->
+	                    <!--<input class="form__input" type="text" name="name" placeholder="Ваше имя" required>-->
+	                    <!--<input class="form__input" type="text" name="phone" placeholder="Ваш телефон" required>-->
+	                    <!--<input id="personal-information" class="form__checkbox" type="checkbox" name="personal-information" />-->
+	                    <!--<label for="personal-information" class="form__text">- Я соглашаюсь на обработку персональных даных</label>-->
+	                    <!--<button class="btn btn-outline-primary form__button" name="button">ПОЛУЧИТЬ ДИЗАЙН-ПРОЕКТ</button>-->
+	                <!--</form>-->
+	            <!--</div>-->
+	        </div> <!--/row -->
+	    </div> <!--/wrapper -->
+	
+	</section>
+	
+	
+	<div class="third-page">
+	    <div class="third-page__header">
+	
+	        <div class="third-page__header__title">Компетенции и факты</div>
+	        <div class="third-page__header__text">В nobilia наша цель состоит в том, чтобы предоставить каждому клиенту именно ту кухню, которую они хотят – ту,
+	            которая идеально подходит для них. И именно поэтому каждая кухня nobilia абсолютно уникальна. Каждая отдельная
+	            кухня индивидуально спланирована и сделана с максимальной точностью.
+	        </div>
+	        <div class="third-page__header__link">
+	            <div class="know-more">
+	                <a class="know-more__link" href="#">
+	                    <div class="know-more__link__title">Узнать больше</div>
+	                    <div class="know-more__link__img">
+	                        <img src="img/icons/icon-right-big.png" alt="Компания nobilia">
+	                    </div>
+	                </a>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+	
+	<section class="wrapper">
+	    <div class="container-fluid">
+	        <div class="row">
+	
+	            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+	                <div class="third-block-item d-flex justify-content-center">
+	                    <div class="third-block-item__img">
+	                        <img src="img/main-img/07-stauraum.jpg">
+	                    </div>
+	                    <div class="third-block-item__info">
+	                        <div class="third-block-item__info__title">Наполнение шкафов</div>
+	                        <div class="third-block-item__info__text">
+	                            Благодаря нашей фурнитуре вы используете всё пространство внутренних шкафов и конечно свет.
+	                        </div>
+	                        <div class="third-block-item__info__link">
+	                            <div class="know-more">
+	                                <a class="know-more__link" href="#">
+	                                    <div class="know-more__link__title">Узнать больше</div>
+	                                    <div class="know-more__link__img">
+	                                        <img src="img/icons/icon-right-big.png" alt="Компания nobilia">
+	                                    </div>
+	                                </a>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	
+	            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+	                <div class="third-block-item d-flex justify-content-center">
+	                    <div class="third-block-item__img">
+	                        <img src="img/main-img/electrogeraete.jpg">
+	                    </div>
+	                    <div class="third-block-item__info">
+	                        <div class="third-block-item__info__title">Встраиваемая техника</div>
+	                        <div class="third-block-item__info__text third-blocks__row__item__info__correctMargin">
+	                            Неотъемлемая составляющая кухни вашей мечты: электроприборы. Откройте для себя разнообразие брендов.
+	                        </div>
+	                        <div class="third-block-item__info__link">
+	                            <div class="know-more">
+	                                <a class="know-more__link" href="#">
+	                                    <div class="know-more__link__title">Узнать больше</div>
+	                                    <div class="know-more__link__img">
+	                                        <img src="img/icons/icon-right-big.png" alt="Компания nobilia">
+	                                    </div>
+	                                </a>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	
+	            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+	                <div class="third-block-item d-flex justify-content-center">
+	                    <div class="third-block-item__img">
+	                        <img src="img/main-img/lichtsysteme.png">
+	                    </div>
+	                    <div class="third-block-item__info">
+	                        <div class="third-block-item__info__title">Система оповещения</div>
+	                        <div class="third-block-item__info__text third-blocks__row__item__info__correctMargin">
+	                            Благодаря нашей фурнитуре вы используете всё пространство внутренних шкафов и конечно свет.
+	                        </div>
+	                        <div class="third-block-item__info__link">
+	                            <div class="know-more">
+	                                <a class="know-more__link" href="#">
+	                                    <div class="know-more__link__title">Узнать больше</div>
+	                                    <div class="know-more__link__img">
+	                                        <img src="img/icons/icon-right-big.png" alt="Компания nobilia">
+	                                    </div>
+	                                </a>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	
+	            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
+	                <div class="third-block-item d-flex justify-content-center">
+	                    <div class="third-block-item__img">
+	                        <img src="img/main-img/2018-05-25-14-40-59.png">
+	                    </div>
+	                    <div class="third-block-item__info">
+	                        <div class="third-block-item__info__title">Видео коллекция</div>
+	                        <div class="third-block-item__info__text third-blocks__row__item__info__correctMargin">
+	                            Иногда один фильм говорит более 1000 слов.
+	                        </div>
+	                        <div class="third-block-item__info__link">
+	                            <div class="know-more">
+	                                <a class="know-more__link" href="#">
+	                                    <div class="know-more__link__title">Узнать больше</div>
+	                                    <div class="know-more__link__img">
+	                                        <img src="img/icons/icon-right-big.png" alt="Компания nobilia">
+	                                    </div>
+	                                </a>
+	                            </div>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	
+	</section>
+
+	<!--CERTS-->
+	<section class="wr-certs mt-5">
+	
+	    <div class="container">
+	        <div class="row align-items-center no-gutters">
+	            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6"><img src="img/certs/goldenes_m.png" alt=""></div>
+	            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6"><img src="img/certs/gs_guetesiegel.png" alt=""></div>
+	            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6"><img src="img/certs/klimapakt.png" alt=""></div>
+	            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6"><img src="img/certs/pefc_zertifikat.png" alt=""></div>
+	            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6"><img src="img/certs/qm_um_em_zertifikat.png" alt=""></div>
+	            <div class="col-xl-2 col-lg-2 col-md-4 col-sm-4 col-6"><img src="img/certs/recycling_zertifikat.png" alt=""></div>
+	        </div>
+	
+	    </div> <!--/wrapper -->
+	
+	</section>
+
+	<!--BENEFIT-->
+	<section class="wrapper">
+	
+	    <div class="container-fuid px-3">
+	        <div class="row">
+	            <div class="benefit-title col-12">
+	                ВЫГОДА, КОТОРУЮ ВЫ ПОЛУЧАЕТЕ ЗАКАЗАВ КУХНЮ В СТУДИИ <span>NOBILIA</span>
+	            </div>
+	            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 mb-4">
+	                <div class="benefit-item">
+	                    <div class="benefit-item__title">
+	                        Салон вмещает множество кухонь
+	                    </div>
+	                    <div class="benefit-item__text">
+	                        Все популярные механизмы и
+	                        стили представлены в нашем
+	                        салоне, всё можно потрагать.
+	                        Потрясающие механизмы,
+	                        умная система подсветки, вся техника подключена.
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 mb-4">
+	                <div class="benefit-item">
+	                    <div class="benefit-item__title">
+	                        Менеджеры и сборщики стажируются в Германии
+	                    </div>
+	                    <div class="benefit-item__text">
+	                        Все наши сотрудники в том числе и сбощики, проходят обучение и стажировку на фабрике nobilia.
+	                        Вам всегда расскажут о новинках и соберут кухню точно в срок!
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 mb-4">
+	                <div class="benefit-item">
+	                    <div class="benefit-item__title">
+	                        Идеальная точность исполнения заказа
+	                    </div>
+	                    <div class="benefit-item__text">
+	                        Контроль каждого заказа от его приёма до передачи клиенту.
+	                        Контроль ведёт не только Ваш дизайнер, консультант, но и технологи фабрики.
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12 col-12 mb-4">
+	                <div class="benefit-item">
+	                    <div class="benefit-item__title">
+	                        Максимальные сроки изготовления - 60 дней
+	                    </div>
+	                    <div class="benefit-item__text">
+	                        Фабрика ежедневно производит более 3 000 кухонь, например,
+	                        Ваша кухня будет изготовлена всего за 30 минут,
+	                        далее она пройдет проверку и отправится в Ростов-на-Дону
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div> <!--/container -->
+	
+	</section> <!--/wrapper -->
+
+	<!--CALL-FORM-->
+	<div class="call-formBlock">
+	    <div class="wrapper">
+	        <div class="container">
+	            <div class="row">
+	                <div class="call-form col">
+	                    <div class="call-form__title">
+	                        ЧТО ДЕЛАТЬ ДАЛЬШЕ?
+	                    </div>
+	                    <!--<div class="call-form__container">-->
+	                        <!--<div class="call-form__container__text">-->
+	                            <!--Вы можете записаться на замер или назначить встречу в салоне-->
+	                            <!--Мы ответим на все вопросы, просто заполните форму и мы Вам перезвоним-->
+	                        <!--</div>-->
+	                        <!--<form class="call-form__container__form">-->
+	                            <!--<input class="call-form__container__form">-->
+	                        <!--</form>-->
+	                    <!--</div>-->
+	
+	                    <form name="call-form"  method="post" class="call-form__form">
+	                        <p class="call-form__form__text">
+	                            Вы можете записаться на замер или назначить встречу в салоне.<br>
+	                            Мы ответим на все вопросы, просто заполните форму и мы Вам перезвоним.
+	                        </p>
+	                        <span class="call-form__form__inputs">
+	                            <input class="call-form__form__inputs__input" type="text" name="name" placeholder="Ваше имя" required>
+	                            <input class="call-form__form__inputs__input" type="text" name="phone" placeholder="Ваш телефон" required>
+	                        </span>
+	                        <span class="call-form__form__personal-information">
+	                            <input id="personal-information" class="call-form__form__personal-information__checkbox" type="checkbox" name="personal-information" />
+	                            <label for="personal-information" class="call-form__form__personal-information__checkbox-text">- Я соглашаюсь на обработку персональных даных</label>
+	                        </span>
+	                    </form>
+	                    <!--<button class="btn btn-outline-primary">Записаться</button>-->
+	                    <button type="button" name="button" class="btn btn-outline-primary btn-call-form">Перезвонить мне</button>
+	                    <!--<form name="form"  method="post" class="form__container">-->
+	                        <!--<div class="form__container__title"><h2>Бесплатный дизайн-проект</h2></div>-->
+	                        <!--<input class="form__container__input" type="text" name="name" placeholder="Ваше имя" required>-->
+	                        <!--<input class="form__container__input" type="text" name="phone" placeholder="Ваш телефон" required>-->
+	                        <!--<input id="personal-information" class="form__container__checkbox" type="checkbox" name="personal-information" />-->
+	                        <!--<label for="personal-information" class="form__container__text">- Я соглашаюсь на обработку персональных даных</label>-->
+	                        <!--<button class="btn btn-outline-primary form__container__button" name="button">ПОЛУЧИТЬ ДИЗАЙН-ПРОЕКТ</button>-->
+	                    <!--</form>-->
+	
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+	<!--CTA-->
+	<section class="wr-cta">
+	
+	    <div class="container">
+	        <h3 class="mb-5">МЫ ГОТОВИМ КАК В САЛОНЕ ТЕХНИКИ, ТАК И В САЛОНЕ КУХОНЬ И МОЖЕМ ПРОВЕСТИ МАСТЕР-КЛАСС ДЛЯ ВАС</h3>
+	        <div class="row mb-5">
+	            <div class="col-md-4 mb-4"><a href="img/news/news-04.jpg" class="swipebox" rel="g-cta"><img src="img/news/news-04.jpg" alt=""></a></div>
+	            <div class="col-md-4 mb-4"><a href="img/news/news-05.jpg" class="swipebox" rel="g-cta"><img src="img/news/news-05.jpg" alt=""></a></div>
+	            <div class="col-md-4 mb-4"><a href="img/news/news-06.jpg" class="swipebox" rel="g-cta"><img src="img/news/news-06.jpg" alt=""></a></div>
+	            <div class="col-md-4 mb-4"><a href="img/news/news-04.jpg" class="swipebox" rel="g-cta"><img src="img/news/news-04.jpg" alt=""></a></div>
+	            <div class="col-md-4 mb-4"><a href="img/news/news-05.jpg" class="swipebox" rel="g-cta"><img src="img/news/news-05.jpg" alt=""></a></div>
+	            <div class="col-md-4 mb-4"><a href="img/news/news-06.jpg" class="swipebox" rel="g-cta"><img src="img/news/news-06.jpg" alt=""></a></div>
+	        </div>
+	        <button type="button" class="btn btn-outline-primary">Записаться</button>
+	    </div> <!--/wrapper -->
+	
+	</section>
+
+	<!--EVENTS-->
+	<section class="wr-events">
+	
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-12 mb-3">
+	                <h3 class="title">ПРОШЕДШИЕ МЕРОПРИЯТИЯ</h3>
+	            </div>
+	            <div class="col-md-6 mb-4">
+	                <a href="img/news/news-01.jpg" class="swipebox" rel="g-evt-1"><img src="img/news/news-01.jpg" alt=""></a>
+	            </div>
+	            <div class="col-md-6 mb-4 align-self-center events-text">
+	                <h3>ОТКРЫТИЕ САЛОНА nobilia в РОСТОВЕ-НА-ДОНУ</h3>
+	                <p>Фото и информация с нашего последнего мероприятия. Хотите попасть на следующий мастер-класс?</p>
+	            </div>
+	            <div class="col-md-6 mb-4">
+	                <a href="img/news/news-02.jpg" class="swipebox" rel="g-evt-1"><img src="img/news/news-02.jpg" alt=""></a>
+	            </div>
+	            <div class="col-md-6 mb-4">
+	                <a href="img/news/news-03.jpg" class="swipebox" rel="g-evt-1"><img src="img/news/news-03.jpg" alt=""></a>
+	            </div>
+	            <div class="col-md-4 mb-4"><a href="img/news/news-04.jpg" class="swipebox" rel="g-evt-1"><img src="img/news/news-04.jpg" alt=""></a></div>
+	            <div class="col-md-4 mb-4"><a href="img/news/news-05.jpg" class="swipebox" rel="g-evt-1"><img src="img/news/news-05.jpg" alt=""></a></div>
+	            <div class="col-md-4 mb-4"><a href="img/news/news-06.jpg" class="swipebox" rel="g-evt-1"><img src="img/news/news-06.jpg" alt=""></a></div>
+	        </div>
+	
+	    </div> <!--/wrapper -->
+	
+	</section>
+
+	<!--CONTACT FORM-->
+	<section class="wr-cont-form">
+	
+	    <div class="container">
+	        <div class="row justify-content-center">
+	            <div class="col-12 col-md-10">
+	                <div class="cont-form">
+	                    <div class="cont-form__title">ЗАПИШИТЕСЬ НА КОНСУЛЬТАЦИЮ К ДИЗАЙНЕРУ <br/> или получите бесплатный 3D дизайн-проект</div>
+	                    <form class="cont-form__form" action="">
+	                        <div class="row">
+	                            <div class="col-md-5">
+	                                <input class="form-control" type="text" placeholder="Ваше имя">
+	                                <input class="form-control" type="text" placeholder="Ваш телефон">
+	                            </div>
+	                            <div class="col-md-7">
+	                                <fieldset class="form-group d-flex align-items-center justify-content-between flex-wrap">
+	                                    <p class="legend">Дизайн-проект</p>
+	                                    <div class="form-check">
+	                                        <input class="form-check-input" type="radio" id="proekt1" name="project" value="need">
+	                                        <label class="form-check-label" for="proekt1">- Нужен</label>
+	                                    </div>
+	                                    <div class="form-check">
+	                                        <input class="form-check-input" type="radio" id="proekt2" name="project" value="noneed">
+	                                        <label class="form-check-label" for="proekt2">- Уже есть</label>
+	                                    </div>
+	                                </fieldset>
+	                                <fieldset class="form-group d-flex align-items-center justify-content-between flex-wrap flex-xl-nowrap">
+	                                    <p class="legend">Контсультация по выбору
+	                                        втраиваемой  техники, мастер-класс</p>
+	                                    <div class="form-check form-check-inline">
+	                                        <input class="form-check-input" type="checkbox" id="tehnika1" name="tehnika" value="need">
+	                                        <label class="form-check-label" for="tehnika1">- Нужна</label>
+	                                    </div>
+	                                </fieldset>
+	                            </div>
+	                            <div class="col-12 text-center accept">
+	                                <div class="form-group">
+	                                    <div class="form-check">
+	                                        <input class="form-check-input" type="checkbox" id="accept">
+	                                        <label class="form-check-label" for="accept">
+	                                            Я соглашаюсь на обработку персональных даных
+	                                        </label>
+	                                    </div>
+	                                </div>
+	                                <button type="submit" class="btn btn-outline-primary">Записаться</button>
+	                            </div>
+	                        </div>
+	                    </form>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	
+	</section>
+
+	<!--SLIDER-->
+	<div class="wr-slider">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-12 text-center mb-5">
+	                <h3 class="title">ДОБРО ПОЖАЛОВАТЬ В САЛОН! <br/>ЗДЕСЬ ВЫ СМОЖЕТЕ ПО ДОСТОИНСТВУ ОЦЕНИТЬ КАЧЕСТВО НАШИХ КУХОНЬ.</h3>
+	            </div>
+	            <div class="col-12">
+	                <div class="swiper-container gallery-top">
+	                    <div class="swiper-wrapper">
+	                        <a class="swiper-slide swipebox" style="background-image:url(img/slides/01.jpg)" href="img/slides/01.jpg"></a>
+	                        <a class="swiper-slide swipebox" style="background-image:url(img/slides/Mask_Group_3.jpg)" href="img/slides/Mask_Group_3.jpg" rel="g-slider-bottom"></a>
+	                        <a class="swiper-slide swipebox" style="background-image:url(img/slides/Mask_Group_4.jpg)" href="img/slides/Mask_Group_4.jpg" rel="g-slider-bottom"></a>
+	                        <a class="swiper-slide swipebox" style="background-image:url(img/slides/Mask_Group_5.jpg)" href="img/slides/Mask_Group_5.jpg" rel="g-slider-bottom"></a>
+	                        <a class="swiper-slide swipebox" style="background-image:url(img/slides/Mask_Group_6.jpg)" href="img/slides/Mask_Group_6.jpg" rel="g-slider-bottom"></a>
+	                        <a class="swiper-slide swipebox" style="background-image:url(img/slides/Mask_Group_7.jpg)" href="img/slides/Mask_Group_7.jpg" rel="g-slider-bottom"></a>
+	                        <a class="swiper-slide swipebox" style="background-image:url(img/slides/Mask_Group_8.jpg)" href="img/slides/Mask_Group_8.jpg" rel="g-slider-bottom"></a>
+	                    </div>
+	                    <!-- Add Pagination -->
+	                    <div class="swiper-pagination"></div>
+	                </div>
+	                <div class="swiper-container gallery-thumbs">
+	                    <div class="swiper-wrapper">
+	                        <div class="swiper-slide" style="background-image:url(img/slides/01.jpg)"></div>
+	                        <div class="swiper-slide" style="background-image:url(img/slides/Mask_Group_3.jpg)"></div>
+	                        <div class="swiper-slide" style="background-image:url(img/slides/Mask_Group_4.jpg)"></div>
+	                        <div class="swiper-slide" style="background-image:url(img/slides/Mask_Group_5.jpg)"></div>
+	                        <div class="swiper-slide" style="background-image:url(img/slides/Mask_Group_6.jpg)"></div>
+	                        <div class="swiper-slide" style="background-image:url(img/slides/Mask_Group_7.jpg)"></div>
+	                        <div class="swiper-slide" style="background-image:url(img/slides/Mask_Group_8.jpg)"></div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+	<!--MAP-->
+	<div class="wr-map">
+	    <div id="map"></div>
+	</div>
+
+	<!--FOOTER-->
+	<footer class="wr-footer">
+	    <div class ="footer">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 d-flex justify-content-xl-center justify-content-lg-center justify-content-md-center justify-content-sm-center justify-content-start">
+	                    <ul class="title pl-2">
+	                        <li><a href="#" class="footer__item">Угловые кухни</a></li>
+	                        <li><a href="#" class="footer__item">Кухня-студия</a></li>
+	                        <li><a href="#" class="footer__item">Белые кухни</a></li>
+	                        <li><a href="#" class="footer__item">Глянцевые кухни</a></li>
+	                        <li><a href="#" class="footer__item">Классические кухни</a></li>
+	                        <li><a href="#" class="footer__item">Современные кухни</a></li>
+	                    </ul>
+	                </div>
+	                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 d-flex justify-content-xl-center justify-content-lg-center justify-content-md-center justify-content-sm-center justify-content-start">
+	                    <ul class="pl-2">
+	                        <li><a href="#" class="footer__item">Кухни без ручек LINE-N</a></li>
+	                        <li><a href="#" class="footer__item">Кухни Лофт</a></li>
+	                        <li><a href="#" class="footer__item">Кухни минимализм</a></li>
+	                        <li><a href="#" class="footer__item">Кухни премиум</a></li>
+	                        <li><a href="#" class="footer__item">Кухни с барной стойкой</a></li>
+	                        <li><a href="#" class="footer__item">Кухни с островом</a></li>
+	                    </ul>
+	                </div>
+	                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 d-flex justify-content-xl-center justify-content-lg-center justify-content-md-center justify-content-sm-center justify-content-start">
+	                    <ul class="title pl-2">
+	                        <li><a href="#" class="footer__item">Nobilia</a></li>
+	                        <li><a href="#" class="footer__item">История компании</a></li>
+	                        <li><a href="#" class="footer__item">Компетенции</a></li>
+	                        <li><a href="#" class="footer__item">Эргономика</a></li>
+	                        <li><a href="#" class="footer__item">Внутренняя фурнитура</a></li>
+	                        <li><a href="#" class="footer__item">Видео коллекция</a></li>
+	                    </ul>
+	                </div>
+	                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 d-flex justify-content-xl-center justify-content-lg-center justify-content-md-center justify-content-sm-center justify-content-start">
+	                    <ul class="pl-2">
+	                        <li><a href="#" class="footer__item">9 ценовых категорий</a></li>
+	                        <li><a href="#" class="footer__item">Sale</a></li>
+	                        <li><a href="#" class="footer__item">Вcтраиваемая техника</a></li>
+	                        <li><a href="#" class="footer__item">Дизайнеры</a></li>
+	                        <li><a href="#" class="footer__item">Доставка и оплата</a></li>
+	                        <li><a href="#" class="footer__item">Контакты</a></li>
+	                    </ul>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    <div class="footer__copyright text-center">
+	        <p>Nobilia-Rostov &copy; 2018</p>
+	    </div>
+	</footer>
+
+	<!-- scripts -->
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

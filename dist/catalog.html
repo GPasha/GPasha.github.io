@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<!-- META -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<html lang="en">
+	
+	
+		<!-- FAVICON -->
+		<link rel="icon" type="image/x-icon" href="favicon.ico" >
+		<link rel="icon" type="image/png" href="favicon.png" type="image/x-icon">
+	
+	
+		<!-- SEO -->
+		<meta name="description" content="">
+		<meta name="rating" content="">
+		<meta name="author" content="">
+		<meta name="robots" content="index,follow">
+	
+		<!-- CONFIG -->
+		<meta name="format-detection" content="telephone=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	
+	
+		<!-- Tweeter card -->
+		<meta name="twitter:card" content="summary">
+		<meta name="twitter:site" content="@site_account">
+		<meta name="twitter:creator" content="@individual_account">
+		<meta name="twitter:url" content="https://example.com/page.html">
+		<meta name="twitter:title" content="Content Title">
+		<meta name="twitter:description" content="Content description less than 200 characters">
+		<meta name="twitter:image" content="https://example.com/image.jpg">
+	
+	
+		<!-- Facebook card -->
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://example.com/page.html">
+		<meta property="og:title" content="Content Title">
+		<meta property="og:image" content="https://example.com/image.jpg">
+		<meta property="og:description" content="Description Here">
+		<meta property="og:site_name" content="Site Name">
+		<meta property="og:locale" content="en_US">
+	
+		<!-- CSS -->
+		<link rel="stylesheet" href="css/main.css">
+	
+		<title>nobilia</title>
+	
+	
+		<!--JAVASCRIPT-->
+		<script src="https://yandex.st/jquery/2.2.3/jquery.min.js" type="text/javascript"></script>
+		<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+	
+	</head>
+
+<body>
+	<!--[if lt IE 10]>
+	<p class="browsehappy">Вы используете <strong>УСТАРЕВШИЙ Internet Explorer</strong> браузер. Пожалуйста, <a href="http://browsehappy.com/">обновите ваш Браузер</a> чтобы увидеть больше возможностей на сайтах!</p>
+	<![endif]-->
+
+	<section class="wr-header">
+		<div class="container">
+			<!--MENU-->
+			<nav class="navbar navbar-expand-xl bg-white">
+			    <a class="navbar-brand" href="index.html">
+			        <img class="img-fluid" src="img/logo_de.png">
+			    </a>
+			
+			    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Navigation">
+			        <svg width="28" height="28"><use xlink:href="#icon-nav-toggle"></use></svg>
+			    </button>
+			
+			    <div class="collapse navbar-collapse justify-content-center" id="navbarContent">
+			        <ul class="navbar-nav">
+			            <li class="nav-item active">
+			                <a class="nav-link" href="index.html">
+			                    <img class="d-none d-xl-block" src="img/icons/icon-home.png" alt="">
+			                    <span class="d-inline-block d-xl-none">Главная</span>
+			                </a>
+			            </li>
+			            <li class="nav-item">
+			                <a class="nav-link" href="catalog.html">Каталог</a>
+			            </li>
+			            <li class="nav-item">
+			                <a class="nav-link" href="#">Типы кухонь</a>
+			            </li>
+			            <li class="nav-item">
+			                <a class="nav-link" href="#">9 ценовых категорий</a>
+			            </li>
+			            <li class="nav-item">
+			                <a class="nav-link" href="vstraivaemaya-tehnika.html">Встраиваемая техника</a>
+			            </li>
+			            <li class="nav-item dropdown">
+			                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			                    nobilia
+			                </a>
+			                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+			                    <a class="dropdown-item" href="nobilia.html">nobilia</a>
+			                    <a class="dropdown-item" href="#">Производство</a>
+			                    <a class="dropdown-item" href="#">Компетенции и факты</a>
+			                    <a class="dropdown-item" href="#">Внутренняя фурнитура</a>
+			                    <a class="dropdown-item" href="#">Эргономика</a>
+			                    <a class="dropdown-item" href="#">Видео коллекция</a>
+			                    <a class="dropdown-item" href="#">Sale</a>
+			                    <a class="dropdown-item" href="#">Доставка и оплата</a>
+			                    <a class="dropdown-item" href="#">Контакты</a>
+			                </div>
+			            </li>
+			        </ul>
+			
+			    </div>
+			
+			    <div class="navbar__search">
+			        <a data-toggle="collapse" href="#searchCollapse" role="button" aria-expanded="false" aria-controls="searchCollapse">
+			            <svg width="24" height="24"><use xlink:href="#icon-search"></use></svg>
+			        </a>
+			    </div>
+			
+			    <div class="navbar__contacts">
+			        <a class="navbar__contacts__phone text-dark d-block mb-2" href="tel:+7 (863) 299-44-53">+7 (863) 299-44-53</a>
+			        <span class="navbar__contacts__location small">Красноармейская 103/123</span>
+			    </div>
+			
+			    <div id="searchCollapse" class="collapse navbar-search-collapse">
+			        <div class="container py-4">
+			            <div class="input-group">
+			                <input id="q" name="q" class="form-control" placeholder="Найти...">
+			                <div class="input-group-append">
+			                    <button class="btn btn-sm btn-outline-primary" type="submit">Найти</button>
+			                </div>
+			            </div>
+			        </div>
+			    </div>
+			</nav>
+
+			<div class="breadcrumbs">
+				<a href="/index.html"><img src="img/icons/icon-home-sm.png" alt=""></a>
+				<a class="active" href="">Каталог</a>
+			</div>
+
+		</div>
+	</section>
+
+	<!--TOP INNER-->
+	<section class="wr-top-inner">
+	    <div class="container">
+	        <div class="topintro">
+	            <div class="topintro__slogan">
+	                <div class="topintro__header">
+	                    <p>КАТАЛОГ КУХОНЬ КОЛЛЕКЦИЯ 2018</p>
+	                </div>
+	                <div class="topintro__text">
+	                    <p>НОВЫЕ КУХНИ, НОВЫЕ ФАСАДЫ, НОВЫЕ РУЧКИ, НОВЫЕ ЦВЕТА</p>
+	                </div>
+	            </div>
+	            <div class="topintro__next">
+	                <a class="icon icon-next-big" href="#"></a>
+	            </div>
+	            <div class="topintro__links d-flex flex-column">
+	                <a class="icon icon-pin" href="#"></a>
+	                <a class="icon icon-plan" href="#"></a>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+
+	<!--CATALOG-->
+	<section class="wr-catalog">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-12">
+	                <div class="catalog__filter">
+	                    <form>
+	                        <div class="form-row">
+	                            <div class="col">
+	                                <div class="catalog__filter__info d-flex justify-content-between align-items-center">
+	                                    <p>Найдено <span>(23)</span></p>
+	                                    <button>Сбросить</button>
+	                                </div>
+	                            </div>
+	                            <div class="col">
+	                                <select>
+	                                    <option selected>Все модели</option>
+	                                    <option>SPEED</option>
+	                                    <option>LASER</option>
+	                                    <option>RIO</option>
+	                                    <option>STRUCTURA</option>
+	                                    <option>TOUCH</option>
+	                                    <option>FLASH</option>
+	                                    <option>FASHION</option>
+	                                    <option>FOCUS</option>
+	                                    <option>STONEART</option>
+	                                    <option>INLINE</option>
+	                                    <option>CREDO</option>
+	                                    <option>COTTEDGE</option>
+	                                    <option>FLAIR</option>
+	
+	                                </select>
+	                            </div>
+	                            <div class="col">
+	                                <select>
+	                                    <option selected>Все типы фасадов</option>
+	                                    <option>Глянцевые</option>
+	                                    <option>Матовые</option>
+	                                    <option>Массив</option>
+	                                    <option>Имитация</option>
+	                                    <option>Структура дерева</option>
+	                                    <option>МДФ</option>
+	                                    <option>Пластик</option>
+	                                </select>
+	                            </div>
+	                            <div class="col">
+	                                <select>
+	                                    <option selected>Все ценовые категории</option>
+	                                    <option>1</option>
+	                                    <option>2</option>
+	                                    <option>3</option>
+	                                    <option>4</option>
+	                                    <option>5</option>
+	                                    <option>6</option>
+	                                    <option>7</option>
+	                                    <option>8</option>
+	                                    <option>9</option>
+	                                </select>
+	                            </div>
+	                        </div>
+	                    </form>
+	                </div>
+	            </div>
+	            <div class="col-md-4">
+	                <div class="catalog__item">
+	                    <div class="catalog__item__img" style="background-image:url(img/catalog/stoneart303-riva893-1.jpg);"></div>
+	                    <div class="catalog__item__text">
+	                        <div class="d-flex justify-content-between align-items-center mb-2">
+	                            <div>
+	                                <p class="catalog__item__text__title">STONEART 303</p>
+	                                <p class="catalog__item__text__color">Серый</p>
+	                            </div>
+	                            <div class="catalog__item__text__extra-links">
+	                                <a class="icon icon-plan" href="#"></a><a class="icon icon-pin" href="#"></a>
+	                            </div>
+	                        </div>
+	                        <div class="d-flex justify-content-between align-items-center">
+	                            <a class="catalog__item__text__link more">УЗНАТЬ БОЛЬШЕ</a>
+	                            <p class="catalog__item__text__cost">от 4 120 €</p>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="col-md-4">
+	                <div class="catalog__item">
+	                    <div class="catalog__item__img" style="background-image:url(img/catalog/390-castello.jpg);"></div>
+	                    <div class="catalog__item__text">
+	                        <div class="d-flex justify-content-between align-items-center mb-2">
+	                            <div>
+	                                <p class="catalog__item__text__title">CASTELLO 390</p>
+	                                <p class="catalog__item__text__color">Слоновая кость</p>
+	                            </div>
+	                            <div class="catalog__item__text__extra-links">
+	                                <a class="icon icon-plan" href="#"></a><a class="icon icon-pin selected" href="#"></a>
+	                            </div>
+	                        </div>
+	                        <div class="d-flex justify-content-between align-items-center">
+	                            <a class="catalog__item__text__link more">УЗНАТЬ БОЛЬШЕ</a>
+	                            <p class="catalog__item__text__cost">от 4 800 €</p>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="col-md-4">
+	                <div class="catalog__item">
+	                    <div class="catalog__item__img" style="background-image:url(img/catalog/883-chalet.jpg);"></div>
+	                    <div class="catalog__item__text">
+	                        <div class="d-flex justify-content-between align-items-center mb-2">
+	                            <div>
+	                                <p class="catalog__item__text__title">CHALET 883</p>
+	                                <p class="catalog__item__text__color">Слоноая кость, матовая</p>
+	                            </div>
+	                            <div class="catalog__item__text__extra-links">
+	                                <a class="icon icon-plan" href="#"></a><a class="icon icon-pin" href="#"></a>
+	                            </div>
+	                        </div>
+	                        <div class="d-flex justify-content-between align-items-center">
+	                            <a class="catalog__item__text__link more">УЗНАТЬ БОЛЬШЕ</a>
+	                            <p class="catalog__item__text__cost">от 5 100 €</p>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="col-md-4">
+	                <div class="catalog__item">
+	                    <div class="catalog__item__img" style="background-image:url(img/catalog/stoneart303-riva893-1.jpg);"></div>
+	                    <div class="catalog__item__text">
+	                        <div class="d-flex justify-content-between align-items-center mb-2">
+	                            <div>
+	                                <p class="catalog__item__text__title">STONEART 303</p>
+	                                <p class="catalog__item__text__color">Серый</p>
+	                            </div>
+	                            <div class="catalog__item__text__extra-links">
+	                                <a class="icon icon-plan" href="#"></a><a class="icon icon-pin" href="#"></a>
+	                            </div>
+	                        </div>
+	                        <div class="d-flex justify-content-between align-items-center">
+	                            <a class="catalog__item__text__link more">УЗНАТЬ БОЛЬШЕ</a>
+	                            <p class="catalog__item__text__cost">от 4 120 €</p>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="col-md-4">
+	                <div class="catalog__item">
+	                    <div class="catalog__item__img" style="background-image:url(img/catalog/390-castello.jpg);"></div>
+	                    <div class="catalog__item__text">
+	                        <div class="d-flex justify-content-between align-items-center mb-2">
+	                            <div>
+	                                <p class="catalog__item__text__title">CASTELLO 390</p>
+	                                <p class="catalog__item__text__color">Слоновая кость</p>
+	                            </div>
+	                            <div class="catalog__item__text__extra-links">
+	                                <a class="icon icon-plan" href="#"></a><a class="icon icon-pin" href="#"></a>
+	                            </div>
+	                        </div>
+	                        <div class="d-flex justify-content-between align-items-center">
+	                            <a class="catalog__item__text__link more">УЗНАТЬ БОЛЬШЕ</a>
+	                            <p class="catalog__item__text__cost">от 4 800 €</p>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="col-md-4">
+	                <div class="catalog__item">
+	                    <div class="catalog__item__img" style="background-image:url(img/catalog/883-chalet.jpg);"></div>
+	                    <div class="catalog__item__text">
+	                        <div class="d-flex justify-content-between align-items-center mb-2">
+	                            <div>
+	                                <p class="catalog__item__text__title">CHALET 883</p>
+	                                <p class="catalog__item__text__color">Слоноая кость, матовая</p>
+	                            </div>
+	                            <div class="catalog__item__text__extra-links">
+	                                <a class="icon icon-plan" href="#"></a><a class="icon icon-pin" href="#"></a>
+	                            </div>
+	                        </div>
+	                        <div class="d-flex justify-content-between align-items-center">
+	                            <a class="catalog__item__text__link more">УЗНАТЬ БОЛЬШЕ</a>
+	                            <p class="catalog__item__text__cost">от 5 100 €</p>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="col-md-4">
+	                <div class="catalog__item">
+	                    <div class="catalog__item__img" style="background-image:url(img/catalog/stoneart303-riva893-1.jpg);"></div>
+	                    <div class="catalog__item__text">
+	                        <div class="d-flex justify-content-between align-items-center mb-2">
+	                            <div>
+	                                <p class="catalog__item__text__title">STONEART 303</p>
+	                                <p class="catalog__item__text__color">Серый</p>
+	                            </div>
+	                            <div class="catalog__item__text__extra-links">
+	                                <a class="icon icon-plan" href="#"></a><a class="icon icon-pin" href="#"></a>
+	                            </div>
+	                        </div>
+	                        <div class="d-flex justify-content-between align-items-center">
+	                            <a class="catalog__item__text__link more">УЗНАТЬ БОЛЬШЕ</a>
+	                            <p class="catalog__item__text__cost">от 4 120 €</p>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="col-md-4">
+	                <div class="catalog__item">
+	                    <div class="catalog__item__img" style="background-image:url(img/catalog/390-castello.jpg);"></div>
+	                    <div class="catalog__item__text">
+	                        <div class="d-flex justify-content-between align-items-center mb-2">
+	                            <div>
+	                                <p class="catalog__item__text__title">CASTELLO 390</p>
+	                                <p class="catalog__item__text__color">Слоновая кость</p>
+	                            </div>
+	                            <div class="catalog__item__text__extra-links">
+	                                <a class="icon icon-plan" href="#"></a><a class="icon icon-pin" href="#"></a>
+	                            </div>
+	                        </div>
+	                        <div class="d-flex justify-content-between align-items-center">
+	                            <a class="catalog__item__text__link more">УЗНАТЬ БОЛЬШЕ</a>
+	                            <p class="catalog__item__text__cost">от 4 800 €</p>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	            <div class="col-md-4">
+	                <div class="catalog__item">
+	                    <div class="catalog__item__img" style="background-image:url(img/catalog/883-chalet.jpg);"></div>
+	                    <div class="catalog__item__text">
+	                        <div class="d-flex justify-content-between align-items-center mb-2">
+	                            <div>
+	                                <p class="catalog__item__text__title">CHALET 883</p>
+	                                <p class="catalog__item__text__color">Слоноая кость, матовая</p>
+	                            </div>
+	                            <div class="catalog__item__text__extra-links">
+	                                <a class="icon icon-plan" href="#"></a><a class="icon icon-pin" href="#"></a>
+	                            </div>
+	                        </div>
+	                        <div class="d-flex justify-content-between align-items-center">
+	                            <a class="catalog__item__text__link more">УЗНАТЬ БОЛЬШЕ</a>
+	                            <p class="catalog__item__text__cost">от 5 100 €</p>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	
+	        </div>
+	    </div>
+	</section>
+
+	<!--EVENTS-->
+	<section class="wr-cta">
+	
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-12">
+	                <h3>В НАШЕЙ СТУДИИ МЫ ПРОВОДИМ КУЛИНАРНЫЕ ВСТРЕЧИ, НА КОТОРЫХ БУДЕМ РАДЫ ВАС ВИДЕТЬ</h3>
+	                <button type="button" class="btn btn-outline-primary">Записаться</button>
+	            </div>
+	        </div>
+	    </div> <!--/wrapper -->
+	
+	</section>
+
+	<!--EVENTS-->
+	<section class="wr-events">
+	
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-12 mb-3">
+	                <h3 class="title">ПРОШЕДШИЕ МЕРОПРИЯТИЯ</h3>
+	            </div>
+	            <div class="col-md-6 mb-4">
+	                <a href="img/news/news-01.jpg" class="swipebox" rel="g-evt-1"><img src="img/news/news-01.jpg" alt=""></a>
+	            </div>
+	            <div class="col-md-6 mb-4 align-self-center events-text">
+	                <h3>ОТКРЫТИЕ САЛОНА nobilia в РОСТОВЕ-НА-ДОНУ</h3>
+	                <p>Фото и информация с нашего последнего мероприятия. Хотите попасть на следующий мастер-класс?</p>
+	            </div>
+	            <div class="col-md-6 mb-4">
+	                <a href="img/news/news-02.jpg" class="swipebox" rel="g-evt-1"><img src="img/news/news-02.jpg" alt=""></a>
+	            </div>
+	            <div class="col-md-6 mb-4">
+	                <a href="img/news/news-03.jpg" class="swipebox" rel="g-evt-1"><img src="img/news/news-03.jpg" alt=""></a>
+	            </div>
+	            <div class="col-md-4 mb-4"><a href="img/news/news-04.jpg" class="swipebox" rel="g-evt-1"><img src="img/news/news-04.jpg" alt=""></a></div>
+	            <div class="col-md-4 mb-4"><a href="img/news/news-05.jpg" class="swipebox" rel="g-evt-1"><img src="img/news/news-05.jpg" alt=""></a></div>
+	            <div class="col-md-4 mb-4"><a href="img/news/news-06.jpg" class="swipebox" rel="g-evt-1"><img src="img/news/news-06.jpg" alt=""></a></div>
+	        </div>
+	
+	    </div> <!--/wrapper -->
+	
+	</section>
+
+	<!--CONTACT FORM-->
+	<section class="wr-cont-form">
+	
+	    <div class="container">
+	        <div class="row justify-content-center">
+	            <div class="col-12 col-md-10">
+	                <div class="cont-form">
+	                    <div class="cont-form__title">ЗАПИШИТЕСЬ НА КОНСУЛЬТАЦИЮ К ДИЗАЙНЕРУ <br/> или получите бесплатный 3D дизайн-проект</div>
+	                    <form class="cont-form__form" action="">
+	                        <div class="row">
+	                            <div class="col-md-5">
+	                                <input class="form-control" type="text" placeholder="Ваше имя">
+	                                <input class="form-control" type="text" placeholder="Ваш телефон">
+	                            </div>
+	                            <div class="col-md-7">
+	                                <fieldset class="form-group d-flex align-items-center justify-content-between flex-wrap">
+	                                    <p class="legend">Дизайн-проект</p>
+	                                    <div class="form-check">
+	                                        <input class="form-check-input" type="radio" id="proekt1" name="project" value="need">
+	                                        <label class="form-check-label" for="proekt1">- Нужен</label>
+	                                    </div>
+	                                    <div class="form-check">
+	                                        <input class="form-check-input" type="radio" id="proekt2" name="project" value="noneed">
+	                                        <label class="form-check-label" for="proekt2">- Уже есть</label>
+	                                    </div>
+	                                </fieldset>
+	                                <fieldset class="form-group d-flex align-items-center justify-content-between flex-wrap flex-xl-nowrap">
+	                                    <p class="legend">Контсультация по выбору
+	                                        втраиваемой  техники, мастер-класс</p>
+	                                    <div class="form-check form-check-inline">
+	                                        <input class="form-check-input" type="checkbox" id="tehnika1" name="tehnika" value="need">
+	                                        <label class="form-check-label" for="tehnika1">- Нужна</label>
+	                                    </div>
+	                                </fieldset>
+	                            </div>
+	                            <div class="col-12 text-center accept">
+	                                <div class="form-group">
+	                                    <div class="form-check">
+	                                        <input class="form-check-input" type="checkbox" id="accept">
+	                                        <label class="form-check-label" for="accept">
+	                                            Я соглашаюсь на обработку персональных даных
+	                                        </label>
+	                                    </div>
+	                                </div>
+	                                <button type="submit" class="btn btn-outline-primary">Записаться</button>
+	                            </div>
+	                        </div>
+	                    </form>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	
+	</section>
+
+	<!--SLIDER-->
+	<div class="wr-slider">
+	    <div class="container">
+	        <div class="row">
+	            <div class="col-12 text-center mb-5">
+	                <h3 class="title">ДОБРО ПОЖАЛОВАТЬ В САЛОН! <br/>ЗДЕСЬ ВЫ СМОЖЕТЕ ПО ДОСТОИНСТВУ ОЦЕНИТЬ КАЧЕСТВО НАШИХ КУХОНЬ.</h3>
+	            </div>
+	            <div class="col-12">
+	                <div class="swiper-container gallery-top">
+	                    <div class="swiper-wrapper">
+	                        <a class="swiper-slide swipebox" style="background-image:url(img/slides/01.jpg)" href="img/slides/01.jpg"></a>
+	                        <a class="swiper-slide swipebox" style="background-image:url(img/slides/Mask_Group_3.jpg)" href="img/slides/Mask_Group_3.jpg" rel="g-slider-bottom"></a>
+	                        <a class="swiper-slide swipebox" style="background-image:url(img/slides/Mask_Group_4.jpg)" href="img/slides/Mask_Group_4.jpg" rel="g-slider-bottom"></a>
+	                        <a class="swiper-slide swipebox" style="background-image:url(img/slides/Mask_Group_5.jpg)" href="img/slides/Mask_Group_5.jpg" rel="g-slider-bottom"></a>
+	                        <a class="swiper-slide swipebox" style="background-image:url(img/slides/Mask_Group_6.jpg)" href="img/slides/Mask_Group_6.jpg" rel="g-slider-bottom"></a>
+	                        <a class="swiper-slide swipebox" style="background-image:url(img/slides/Mask_Group_7.jpg)" href="img/slides/Mask_Group_7.jpg" rel="g-slider-bottom"></a>
+	                        <a class="swiper-slide swipebox" style="background-image:url(img/slides/Mask_Group_8.jpg)" href="img/slides/Mask_Group_8.jpg" rel="g-slider-bottom"></a>
+	                    </div>
+	                    <!-- Add Pagination -->
+	                    <div class="swiper-pagination"></div>
+	                </div>
+	                <div class="swiper-container gallery-thumbs">
+	                    <div class="swiper-wrapper">
+	                        <div class="swiper-slide" style="background-image:url(img/slides/01.jpg)"></div>
+	                        <div class="swiper-slide" style="background-image:url(img/slides/Mask_Group_3.jpg)"></div>
+	                        <div class="swiper-slide" style="background-image:url(img/slides/Mask_Group_4.jpg)"></div>
+	                        <div class="swiper-slide" style="background-image:url(img/slides/Mask_Group_5.jpg)"></div>
+	                        <div class="swiper-slide" style="background-image:url(img/slides/Mask_Group_6.jpg)"></div>
+	                        <div class="swiper-slide" style="background-image:url(img/slides/Mask_Group_7.jpg)"></div>
+	                        <div class="swiper-slide" style="background-image:url(img/slides/Mask_Group_8.jpg)"></div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</div>
+
+	<!--MAP-->
+	<div class="wr-map">
+	    <div id="map"></div>
+	</div>
+
+	<!--FOOTER-->
+	<footer class="wr-footer">
+	    <div class ="footer">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 d-flex justify-content-xl-center justify-content-lg-center justify-content-md-center justify-content-sm-center justify-content-start">
+	                    <ul class="title pl-2">
+	                        <li><a href="#" class="footer__item">Угловые кухни</a></li>
+	                        <li><a href="#" class="footer__item">Кухня-студия</a></li>
+	                        <li><a href="#" class="footer__item">Белые кухни</a></li>
+	                        <li><a href="#" class="footer__item">Глянцевые кухни</a></li>
+	                        <li><a href="#" class="footer__item">Классические кухни</a></li>
+	                        <li><a href="#" class="footer__item">Современные кухни</a></li>
+	                    </ul>
+	                </div>
+	                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 d-flex justify-content-xl-center justify-content-lg-center justify-content-md-center justify-content-sm-center justify-content-start">
+	                    <ul class="pl-2">
+	                        <li><a href="#" class="footer__item">Кухни без ручек LINE-N</a></li>
+	                        <li><a href="#" class="footer__item">Кухни Лофт</a></li>
+	                        <li><a href="#" class="footer__item">Кухни минимализм</a></li>
+	                        <li><a href="#" class="footer__item">Кухни премиум</a></li>
+	                        <li><a href="#" class="footer__item">Кухни с барной стойкой</a></li>
+	                        <li><a href="#" class="footer__item">Кухни с островом</a></li>
+	                    </ul>
+	                </div>
+	                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 d-flex justify-content-xl-center justify-content-lg-center justify-content-md-center justify-content-sm-center justify-content-start">
+	                    <ul class="title pl-2">
+	                        <li><a href="#" class="footer__item">Nobilia</a></li>
+	                        <li><a href="#" class="footer__item">История компании</a></li>
+	                        <li><a href="#" class="footer__item">Компетенции</a></li>
+	                        <li><a href="#" class="footer__item">Эргономика</a></li>
+	                        <li><a href="#" class="footer__item">Внутренняя фурнитура</a></li>
+	                        <li><a href="#" class="footer__item">Видео коллекция</a></li>
+	                    </ul>
+	                </div>
+	                <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-12 d-flex justify-content-xl-center justify-content-lg-center justify-content-md-center justify-content-sm-center justify-content-start">
+	                    <ul class="pl-2">
+	                        <li><a href="#" class="footer__item">9 ценовых категорий</a></li>
+	                        <li><a href="#" class="footer__item">Sale</a></li>
+	                        <li><a href="#" class="footer__item">Вcтраиваемая техника</a></li>
+	                        <li><a href="#" class="footer__item">Дизайнеры</a></li>
+	                        <li><a href="#" class="footer__item">Доставка и оплата</a></li>
+	                        <li><a href="#" class="footer__item">Контакты</a></li>
+	                    </ul>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	    <div class="footer__copyright text-center">
+	        <p>Nobilia-Rostov &copy; 2018</p>
+	    </div>
+	</footer>
+
+	
+	<!-- scripts -->
+	<script type="text/javascript" src="js/main.js"></script>
+</body>
+</html>

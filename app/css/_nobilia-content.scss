@@ -1,0 +1,443 @@
+
+.nobilia-second-page{
+  &__header{
+    //max-width: 100vw;
+    width: 100%;
+    min-height: 327px;
+    height: 100%;
+    background-color: $background-third-header;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //display: block;
+    //margin: 0 auto;
+    padding-top: 50px;
+    margin: 80px 0;
+    &__title{
+      color: $white-color;
+      font-family: "Segoe UI";
+      font-size: 80px;
+      font-weight: 600;
+
+      //text-align: center;
+      &::before{
+        content: "";
+        width: 180px;
+        height: 8px;
+        background-color: $white-color;
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    &__subtitle{
+      color: $white-color;
+      font-family: "Segoe UI";
+      font-size: 18px;
+      font-weight: 700;
+      line-height: 30px;
+      margin: 20px 0 40px;
+      a{
+        color: $white-color;
+        img{
+          border-radius: 50%;
+          margin-right: 40px;
+        }
+      }
+    }
+    &__subtitleBottom{
+      margin-bottom: 55px;
+    }
+    &__text{
+      display: block;
+      //max-width: 865px;
+      width: 100%;
+      min-height: 83px;
+      height: 100%;
+      color: $white-color;
+      font-family: "Segoe UI";
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 30px;
+      text-align: center;
+      margin: 15px 0 45px;
+    }
+    &__link{
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+
+//вторая страница nobilia, блоки видео и информация
+
+.videBlocks-title{
+  color: $form-button-text-color;
+  font-family: "Segoe UI";
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  margin: 0 24px;
+  @media (max-width: 1200px){
+    text-align: center;
+  }
+  @media (max-width: 346px){
+    font-size: 18px;
+  }
+  &::before{
+    content: "";
+    display: block;
+    width: 180px;
+    height: 8px;
+    background-color: $background-third-header;
+    margin: 80px 0 30px;
+    @media (max-width: 1200px){
+      margin-left: calc(50vw - 102px);
+    }
+    @include mobile-all() {
+      margin-top: 0;
+    }
+  }
+}
+.videBlocks-text{
+  color: $form-button-text-color;
+  font-family: "Segoe UI";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  margin: 0 24px;
+  @media (max-width: 1200px){
+    text-align: center;
+  }
+  @media (max-width: 346px){
+    font-size: 16px;
+  }
+}
+.videBlocks-item{
+  display: flex;
+  flex-direction: column;
+  margin: 10px 0;
+  border-right: 10px solid white;
+  border-left: 10px solid white;
+  box-sizing: border-box;
+  &__video{
+    //max-width: 450px;
+    width: 100%;
+    img{
+      //max-width: 450px;
+      width: 100%;
+      height: auto;
+    }
+  }
+  &__info{
+    padding: 15px;
+    color: $white-color;
+    font-family: "Segoe UI";
+    //max-width: 450px;
+    width: 100%;
+    line-height: 30px;
+    font-size: 18px;
+    background-color: $background-third-header;
+    @media (max-width: 1360px) and (min-width: 1199.98px){
+      min-height: 190px;
+      height: 100%;
+    }
+    &__title{
+      width: 100%;
+      font-weight: 700;
+    }
+    &__text{
+      font-weight: 400;
+      width: 100%;
+      margin: 5px 0;
+    }
+    &__time {
+    }
+  }
+}
+
+.videoGallery{
+  display: block;
+  margin: 30px 11px 90px;
+  @include mobile-all() {
+    margin: 15px 11px 20px;
+  }
+  &__title{
+    color: $form-button-text-color;
+    font-size: 20px;
+    line-height: 30px;
+    font-family: "Segoe UI";
+    font-weight: 700;
+    transition: color 0.4s;
+    @media (max-width: 382px){
+      font-size: 18px;
+      text-align: center;
+    }
+  }
+  &__link{
+    margin-top: 35px;
+    @media (max-width: 510px){
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 0;
+    }
+    &__btn{
+      margin: 0 25px;
+      transition: color 0.4s;
+
+    }
+    &__text{
+      color: $form-button-text-color;
+      font-size: 18px;
+      font-family: "Segoe UI";
+      font-weight: 700;
+      text-transform: uppercase;
+      transition: color 0.4s;
+      @media (max-width: 510px){
+        margin-top: 10px;
+        font-size: 16px;
+        text-align: center;
+      }
+    }
+  }
+}
+.bigBlocks{
+  margin-top: -20px;
+  margin-bottom: 60px;
+  @include mobile-all() {
+    margin-bottom: 0px;
+  }
+  &__row{
+    &__item-small-left{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-end;
+      padding: 0 20px;
+      margin: 20px 0;
+      @media (max-width: 991.98px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &__title{
+        color: $form-button-text-color;
+        font-family: $font-family-base;
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        text-align: center;
+        @media (max-width: 550px){
+          font-size: 25px;
+          margin-bottom: 5px;
+        }
+      }
+      &__text{
+        font-family: $font-family-base;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: right;
+        max-width: 500px;
+        width: 100%;
+        @media (max-width: 991.98px){
+          text-align: center;
+        }
+        @media (max-width: 550px){
+          font-size: 15px;
+          line-height: 25px;
+        }
+      }
+    }
+    &__item-small-right{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      padding: 0 20px;
+      margin: 20px 0;
+      @media (max-width: 991.98px){
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      &__title{
+        color: $form-button-text-color;
+        font-family: $font-family-base;
+        font-size: 30px;
+        font-weight: 700;
+        margin-bottom: 20px;
+        @media (max-width: 550px){
+          font-size: 25px;
+          margin-bottom: 5px;
+        }
+      }
+      &__text{
+        font-family: $font-family-base;
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: left;
+        max-width: 500px;
+        width: 100%;
+        @media (max-width: 991.98px){
+          text-align: center;
+        }
+        @media (max-width: 550px){
+          font-size: 15px;
+          line-height: 25px;
+        }
+      }
+    }
+    &__item-big{
+      padding: 0 20px;
+      margin: 20px 0;
+      @media (max-width: 991.98px){
+        align-items: center;
+        display: flex;
+      }
+    }
+  }
+}
+.deliveryText{
+  order: 1;
+  @media (max-width: 991.98px){
+    order: 1;
+  }
+}
+.deliveryImg{
+  order: 2;
+  @media (max-width: 991.98px){
+    order: 2;
+  }
+}
+.TechnicsImg{
+  order: 3;
+  @media (max-width: 991.98px){
+    order: 4;
+  }
+}
+.TechnicsText{
+  order: 4;
+  @media (max-width: 991.98px){
+    order: 3;
+  }
+}
+//.competences{
+//  //margin-right: 37px;
+//  //margin-bottom: 40px;
+//  margin: 15px 15px;
+//  background-image: url("../img/nobilia/qualitaet-funktion.jpg");
+//  background-size: cover;
+//}
+//.history{
+//  margin: 15px 15px;
+//  background-image: url("../img/nobilia/historie.jpg");
+//  background-size: cover;
+//}
+.historyMargin{
+  margin: 0 20px;
+}
+.know-more-dark{
+  .more {
+    color: $gray-text;
+    &:after{
+      border: 1px solid $gray;
+    }
+  }
+}
+.competencesBottom{
+  margin-top: 60px;
+}
+.aboutHistory{
+  padding-top: 65px;
+  @include mobile-all() {
+    padding-top: 25px;
+  }
+}
+//.aboutHistoryText{
+//  @include mobile-all() {
+//    margin-top: 50px;
+//  }
+//}
+.aboutHistoryBottom{
+  margin-top: 170px;
+}
+//Четвертая страница Nobilia//
+
+
+.top-border{
+  &:before{
+    content: "";
+    display: block;
+    width:180px;
+    height:8px;
+    background-color: $background-third-header;
+    margin-bottom: 20px;
+  }
+}
+.ecology-title{
+  font-family: $font-family-base;
+  font-size: 20px;
+  font-weight: 700;
+  padding:0 15px;
+}
+.ecology-text{
+  max-width: 571px;
+  width: 100%;
+  color: $form-button-text-color;
+  font-family: $font-family-base;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 15px;
+  padding:0 15px;
+
+}
+
+
+.ecology-img{
+  width: 100%;
+  height: auto;
+}
+.ecology-info{
+  //padding: 25px 25px 25px 50px;
+  color: $form-button-text-color;
+  font-family: $font-family-base;
+  &__title{
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  &__text{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+}
+
+
+//.ecology-container{
+//  padding: 25px 0;
+//  &__item{
+//    margin: 0 -25px;
+//    &__img{
+//      padding: 25px 0 25px 25px;
+//    }
+//    &__info{
+//      padding: 25px 25px 25px 50px;
+//      color: $form-button-text-color;
+//      font-family: "Segoe UI";
+//      &__title{
+//        font-size: 20px;
+//        font-weight: 700;
+//        margin-bottom: 20px;
+//      }
+//      &__text{
+//        font-size: 18px;
+//        font-weight: 400;
+//        line-height: 30px;
+//      }
+//    }
+//  }
+//}

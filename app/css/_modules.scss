@@ -1,0 +1,797 @@
+/*********************************/
+/*********** Modules *************/
+/*********************************/
+
+//  MENU
+
+.wr-header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
+  .container {
+    @include mobile-all() {
+      padding: 0;
+    }
+  }
+
+  .navbar-brand {
+    display: flex;
+    flex-direction: column;
+    color: $color_black;
+    padding: 0;
+
+    img {
+      object-fit: contain;
+    }
+
+    @include mobile-portrait() {
+      margin: 0 0 10px;
+      width: 100%;
+      text-align: center;
+    }
+    @include mobile-landscape() {
+      margin: 0;
+      width: 30%;
+      text-align: left;
+      img {
+        object-position: left;
+      }
+    }
+  }
+
+  .navbar {
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+    &-toggler {
+      padding: 0px;
+      color: $color_gray;
+      &:hover {
+        color: $color_red;
+      }
+      @include mobile-all() {
+        order: 3;
+      }
+      @include tablet-all() {
+        order: 3;
+      }
+    }
+    &-collapse {
+      @include mobile-all() {
+        order: 5;
+      }
+      @include tablet-all() {
+        order: 5;
+      }
+    }
+    &-search-collapse {
+      width: 100%;
+      @include mobile-all() {
+        order: 4;
+      }
+      @include tablet-all() {
+        order: 4;
+      }
+    }
+
+    .navbar-nav {
+      .nav-item {
+        margin: 0 15px 10px;
+        border-bottom: 4px solid transparent;
+
+        @include mobile-all() {
+          border-width: 2px;
+        }
+
+        &.active, &:hover {
+          border-bottom: 4px solid $color_red;
+
+          @include mobile-all() {
+            border-width: 2px;
+          }
+        }
+
+        &.dropdown > a {
+          color: $color_red;
+        }
+
+        &.dropdown .dropdown-menu {
+          left: 50%;
+          -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+          @include mobile-all() {
+            left: 0%;
+            -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+          }
+          @include tablet-all() {
+            left: 0%;
+            -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+          }
+        }
+
+        .nav-link {
+          padding-bottom: 10px;
+          color: $color_black;
+          font-weight: 600;
+
+          @include mobile-all() {
+            padding-bottom: 6px;
+            padding-top: 16px;
+          }
+        }
+
+        @include mobile-all() {
+          padding: 0;
+          margin: 0;
+        }
+      }
+    }
+
+    &__search {
+      padding-bottom: 0px;
+      margin-right: 0px;
+      flex-grow: 2;
+      text-align: center;
+
+      a {
+        color: $color_gray;
+        &:hover {
+          color: $color_red;
+        }
+      }
+
+      @include mobile-all() {
+        padding: 4px 0 0;
+        margin: 0;
+        order: 2;
+        svg {
+          margin: 0;
+        }
+      }
+      @include tablet-all() {
+        padding: 4px 0 0;
+        margin: 0;
+        order: 2;
+        svg {
+          margin: 0;
+        }
+      }
+    }
+
+    &__contacts {
+      line-height: 1;
+      flex-grow: 2;
+      text-align: right;
+
+      &__phone {
+        font-size: $font-sz-lg;
+        @include mobile-all() {
+          font-size: $font-size-base;
+        }
+      }
+
+      @include mobile-all() {
+        align-self: center;
+        order: 1;
+        flex-grow: 1;
+      }
+      @include mobile-portrait() {
+        text-align: left;
+      }
+      @include mobile-landscape() {
+        text-align: center;
+      }
+      @include tablet-all() {
+        align-self: center;
+        order: 1;
+        flex-grow: 2;
+        text-align: center;
+      }
+    }
+
+    &__btn {
+      align-self: flex-start;
+    }
+
+    @include mobile-all() {
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+  }
+}
+
+//TOPINTRO
+
+.wr-topintro {
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: 0 0;
+
+  .container {
+    position: relative;
+    height: 810px;
+
+    @include mobile-all() {
+      display: flex;
+      align-items: flex-end;
+    }
+    @include mobile-portrait() {
+      height: 100vh;
+    }
+    @include mobile-landscape() {
+      height: 100vh;
+    }
+  }
+
+  .topintro {
+    position: absolute;
+    bottom: 120px;
+    width: 100%;
+
+    @include mobile-all() {
+      position: relative;
+      bottom: 15px;
+      display: flex;
+      align-items: flex-end;
+    }
+
+
+    &__slogan {
+      position: relative;
+      top: 54%;
+      left: 0;
+      text-align: right;
+      margin-right: 190px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      @include mobile-all() {
+        width: 100%;
+        margin-right: 0px;
+        right: 0;
+        left: 0;
+        align-items: center;
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+
+    &__header {
+      font-size: $font-sz-xl;
+      color: $color_red;
+      font-weight: bold;
+      background-color: rgba($color_white, .8);
+      padding: 20px 30px;
+      text-align: center;
+      margin-bottom: 1rem;
+
+      @include mobile-all() {
+        width: 100%;
+        font-size: $font-sz-md;
+      }
+    }
+    &__text {
+      background-color: rgba($color_red, .8);
+      padding: 15px 40px;
+      text-align: center;
+      color: $color_white;
+      font-size: $font-sz-lg;
+      font-weight: bold;
+
+      @include mobile-all() {
+        width: 100%;
+        font-size: $font-size-base;
+      }
+    }
+
+  }
+}
+
+//FLYING NAV
+
+.wr-flying-nav {
+  position: fixed;
+  width: 0;
+  height: calc(100vh - 100px);
+  top: 100px;
+  right: 60px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  z-index: 1010;
+
+  @include mobile-all() {
+    right: 45px;
+  }
+
+  &__gototop {
+    position: relative;
+    @include transition(all 0.4s ease-in-out);
+  }
+}
+
+// CTA
+
+.wr-cta {
+  text-align: center;
+  margin: 80px 0 90px;
+  h3 {
+    margin-bottom: 40px;
+  }
+}
+
+//  EVENTS
+
+.wr-events {
+  text-align: center;
+  margin-bottom: 97px;
+
+  h3 {
+    margin-bottom: 56px;
+  }
+  p {
+    margin: 0 110px 70px;
+    @include mobile-all() {
+      right: 45px;
+      margin: 0 10px 20px;
+    }
+  }
+  .events-text {
+    color: $color_gray;
+  }
+}
+
+//  CONTACT FORM
+
+.wr-cont-form {
+  margin-bottom: 85px;
+
+  .cont-form {
+    border: 1px solid $color_gray;
+    padding: 65px 72px 50px;
+
+    @include mobile-all() {
+      padding: 30px 15px;
+    }
+
+    &__title {
+      font-size: $font-sz-xl;
+      margin-bottom: 65px;
+      text-align: center;
+
+      @include mobile-all() {
+        font-size: $font-sz-lg;
+        margin-bottom: 25px;
+      }
+    }
+
+    &__form {
+      .form-control {
+        margin-bottom: 15px;
+      }
+      .accept {
+        margin-top: 35px;
+        @include mobile-all() {
+          margin-top: 15px;
+        }
+
+        .form-group {
+          margin-left: 20px;
+        }
+        .form-check {
+          margin-right: 0;
+          margin-bottom: 24px;
+        }
+      }
+
+      fieldset {
+        padding: 10px 0;
+        margin-bottom: 15px;
+        margin-left: 20px;
+
+        .legend {
+          margin-bottom: 0px;
+          font-size: 20px;
+          font-weight: 700;
+          @include mobile-all() {
+            width: 100%;
+            margin-bottom: 15px;
+          }
+        }
+        .form-check {
+          margin-right: 35px;
+          display: inline-flex;
+          align-items: center;
+          white-space: nowrap;
+        }
+      }
+    }
+  }
+}
+
+// 3D SLIDER
+
+.wr-slider {
+  margin-bottom: 85px;
+
+  .swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    @include mobile-all() {
+      padding-bottom: 5px;
+    }
+    @include tablet-all() {
+      padding-bottom: 15px;
+    }
+  }
+  .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 800px;
+    height: 400px;
+  }
+  .gallery-thumbs {
+    height: 195px;
+    box-sizing: border-box;
+    padding: 25px 0;
+    @include mobile-all() {
+      padding: 5px 0 10px;
+    }
+    @include tablet-all() {
+      padding: 10px 0;
+    }
+  }
+  .gallery-thumbs .swiper-slide {
+    height: 100%;
+    opacity: 0.4;
+  }
+  .gallery-thumbs .swiper-slide-active {
+    opacity: 1;
+  }
+}
+
+//BREADCRUMBS
+
+.breadcrumbs {
+  padding: 10px 40px;
+  background-color: rgba(87, 87, 87, 0.3);
+
+  a {
+    color: $color_white;
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 7px;
+      height: 11px;
+      background-image: url(../img/icons/icon-breadcrumb.png);
+      background-repeat: no-repeat;
+      -webkit-background-size: cover;
+      background-size: cover;
+      margin: 0 6px;
+    }
+    &:last-child:after {
+      display: none;
+    }
+  }
+}
+
+//  TOP on catalog
+
+.wr-top-inner {
+  height: 590px;
+  background-image: url(../img/catalog/top-inner.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: 0 0;
+
+  .container {
+    position: relative;
+    height: 590px;
+  }
+
+}
+
+// SELECTION IN CATALOG
+
+.catalog__filter .form-row {
+  margin: 60px 165px 40px;
+}
+
+.catalog__filter__info {
+  border: 1px solid $color_gray;
+  height: 40px;
+  padding: 8px 15px;
+  p {
+    font-weight: 600;
+    margin-bottom: 0;
+  }
+  button {
+    display: inline-block;
+    font-weight: bold;
+    text-transform: none;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: none;
+    background-color: transparent;
+    font-size: 14px;
+    line-height: 1.5;
+    border-radius: 0;
+  }
+}
+
+.select-hidden {
+  display: none;
+  visibility: hidden;
+  padding-right: 10px;
+}
+
+.select {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  font-size: 16px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid $color_gray;
+}
+
+.select-styled {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 8px 15px;
+  @include transition(all 0.2s ease-in);
+
+  &:after {
+    content: "";
+    width: 8px;
+    height: 13px;
+    background-image: url(../img/icons/icon-right-sm.png);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 14px;
+    right: 10px;
+  }
+}
+
+.select-options {
+  display: none;
+  position: absolute;
+  top: 100%;
+  right: -1px;
+  left: -1px;
+  z-index: 999;
+  margin: 0;
+  padding: 9px 0;
+  list-style: none;
+  background-color: $color_white;
+  border: 1px solid $color_gray;
+  li {
+    font-weight: 600;
+    margin: 0;
+    padding: 2px 0 2px 10px;
+    text-indent: 15px;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    @include transition(all 0.15s ease-in);
+    &:hover {
+      border-top: 1px solid $color_gray;
+      border-bottom: 1px solid $color_gray;
+      color: $color_white;
+      background-color: $color_red;
+    }
+    &[rel="hide"] {
+      display: none;
+    }
+  }
+}
+
+// CATALOG
+
+.catalog {
+  &__item {
+    margin-bottom: 20px;
+    &__img {
+      width: 100%;
+      height: 205px;
+      -webkit-background-size: cover;
+      background-size: cover;
+      position: relative;
+
+      &:before {
+        content: '';
+        background-image: url(../img/icons/icon-search.png);
+        width: 0;
+        height: 0;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: $color_white;
+        -webkit-border-radius: 16px;
+        -moz-border-radius: 16px;
+        border-radius: 25px;
+        border: 2px solid $color_gray;
+        z-index: 801;
+        opacity: 0;
+        transition: $trans;
+        -webkit-background-size: 0;
+        background-size: 0;
+      }
+      &:after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 800;
+        background-color: $color_gray;
+        opacity: 0;
+        transition: $trans;
+      }
+
+      &:hover {
+        &:before {
+          opacity: 1;
+          width: 50px;
+          height: 50px;
+          -webkit-background-size: 23px;
+          background-size: 23px;
+        }
+        &:after {
+          opacity: 0.5;
+        }
+      }
+    }
+    &__text {
+      background-color: $color_gray;
+      color: $color_white;
+      padding: 20px;
+
+      &__title {
+        font-size: 18px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+
+      &__extra-links {
+        .icon {
+          display: inline-block;
+          margin-bottom: 0;
+        }
+
+      }
+      &__cost {
+        margin-bottom: 0;
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+// TOP tehnika
+
+.wr-top-inner-tehnika {
+  height: 810px;
+  background-image: url(../img/tehnika/kitchen6.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: 0 0;
+
+  .container {
+    position: relative;
+    height: 810px;
+  }
+}
+
+//  IMPORTANT GRAY block
+
+.wr-important {
+  background-color: $color_gray;
+  color: $color_white;
+  padding: 70px 0;
+  margin: 60px 0;
+
+  .important {
+
+    .title:before {
+      background-color: $color_white;
+      margin-bottom: 0;
+    }
+    h2 {
+      font-size: 80px;
+      font-weight: 600;
+      text-transform: none;
+      margin-bottom: 18px;
+    }
+    p {
+      width: 815px;
+      margin: 0 auto;
+    }
+    &__link {
+      margin-top: 50px;
+    }
+  }
+}
+
+// BRAND in vstraivaemaya tehika
+
+.wr-brands {
+  margin: 50px 0 80px;
+  .title {
+    color: $color_gray;
+    &:before {
+      margin: 0 0 30px;
+    }
+  }
+}
+
+// SCALIZE
+
+.scalize {
+  .item-point {
+    background: $color_white;
+  }
+  h5 {
+    margin-bottom: 0;
+    line-height: 1;
+    font-size: 1.2rem;
+  }
+
+  a.btn {
+    padding: 12px;
+    width: 100%;
+    margin-top: 10px;
+    &:hover {
+      color: $color_white;
+    }
+  }
+}
+
+.scalize .item-point.pulse2::before, .scalize .item-point.pulse2::after {
+  border-color: $color_red;
+}
+
+//TOPINTRO nobilia
+
+.wr-topintro-nobilia {
+  height: 810px;
+  background-image: url(../img/nobilia/kitchen6.jpg);
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: 0 0;
+
+  .container {
+    position: relative;
+    height: 810px;
+  }
+}
