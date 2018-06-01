@@ -3,14 +3,16 @@ $footer-item-hover: rgba(0, 0, 0, 0.35);
 
 .footer {
   background-color: $gray;
-
+  @include mobile-all() {
+    margin-bottom: 25px;
+  }
   ul {
     margin: 132px 0 35px;
     @media (max-width: 575.98px){
       margin:0 0 35px;
     }
     @include mobile-all() {
-      margin: 0;
+      margin: 20px 0 0;
     }
     &.title{
       margin-top: 85px;
@@ -21,7 +23,7 @@ $footer-item-hover: rgba(0, 0, 0, 0.35);
         background-color: #FFF;
         margin: 0 0 50px;
         @include mobile-all() {
-          margin: 0;
+          margin: 20px 0 20px;
         }
       }
     }

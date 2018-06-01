@@ -39,6 +39,7 @@
       width: 100%;
       height: 100%;
     }
+
   }
 }
 
@@ -169,6 +170,7 @@
     transform: translate(0,0);
     opacity: 1;
   }
+
   &__types{
     position: absolute;
     z-index: 0;
@@ -226,7 +228,7 @@
       }
       @include mobile-all() {
         font-size: 16px;
-        width: calc(100% - 25px);
+        width: calc(100% - 10px);
       }
     }
     &_about-history-text{
@@ -270,6 +272,7 @@
     transform: translate(0,0);
     opacity: 1;
   }
+
   &__types{
     position: absolute;
     height: calc(100% - 30px);
@@ -281,21 +284,22 @@
     @include mobile-all() {
       padding-left: 10px;
     }
-    &:hover{
-      background-color: $background-item;
-    }
-    &:hover a h1{
-      transform: translate(0,0);
-      opacity: 1;
-    }
-    &:hover p{
-      transform: translate(0,0);
-      opacity: 1;
-    }
-    &:hover .transform-know-more{
-      transform: translate(0,0);
-      opacity: 1;
-    }
+    //&:hover{
+    //  background-color: $background-item;
+    //}
+    //&:hover a h1{
+    //  transform: translate(0,0);
+    //  opacity: 1;
+    //}
+    //&:hover p{
+    //  transform: translate(0,0);
+    //  opacity: 1;
+    //}
+    //&:hover .transform-know-more{
+    //  transform: translate(0,0);
+    //  opacity: 1;
+    //}
+
     a{
       h1 {
         //width: 174px;
@@ -346,7 +350,7 @@
   padding-top: 15px;
 }
 .aboutKitchenBottom{
-  margin-top: 230px;
+  margin-top: 240px;
 }
 .typesKitchenBottom{
   margin-top: 60px;
@@ -354,7 +358,26 @@
 .ergonomicsBottom{
   margin-top: 80px;
 }
+//////////////////////////////////////////////
+//Классы для JS:
 
+.itemSmallTypesJS{
+  background-color: $background-item;
+}
+.itemSmallTypesH1JS{
+  transform: translate(0,0);
+  opacity: 1;
+}
+.itemSmallTypesPJS{
+  transform: translate(0,0);
+  opacity: 1;
+}
+.itemSmallTransformJS{
+  transform: translate(0,0);
+  opacity: 1;
+}
+
+///////////////////////////////////////////////
 .transform-know-more{
   transform: translate(400px, 0);
   opacity: 0;
@@ -417,6 +440,7 @@
     &:hover &__img{
       transform: translateX(7px);
     }
+
     &__title{
       height: 30px;
       color: #ffffff;
@@ -463,6 +487,7 @@
     &:hover &__img{
       transform: translateX(7px);
     }
+
     &__title{
       height: 39px;
       color: #ffffff;
@@ -477,7 +502,7 @@
         margin:0 20px;
       }
       @include mobile-all() {
-        font-size: 16px;
+        font-size: 15px;
         font-weight: 700;
         margin: 0 10px;
         padding: 8px 0;
