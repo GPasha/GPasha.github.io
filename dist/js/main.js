@@ -18751,7 +18751,7 @@ $(window).on('load', function () {
     var $itemSmallTypesPJS = (".itemSmallTypesPJS");
     var $itemSmallTransformJS = (".itemSmallTransformJS");
  -->
-    $itemSmall.on('touchstart', function () {
+    $itemSmall.on('touch', function () {
 
         $itemSmallTypes.toggleClass("itemSmallTypesJS");
 
