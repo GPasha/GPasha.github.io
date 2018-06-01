@@ -187,21 +187,21 @@
   //  opacity: 1;
   //}
 
-  &:focus &__types{
-    background-color: $background-item;
-  }
-  &:focus &__types h1{
-    transform: translate(0,0);
-    opacity: 1;
-  }
-  &:focus &__types p{
-    transform: translate(0,0);
-    opacity: 1;
-  }
-  &:focus &__types .transform-know-more-itemSmall{
-    transform: translate(0,0);
-    opacity: 1;
-  }
+  //&:focus &__types{
+  //  background-color: $background-item;
+  //}
+  //&:focus &__types h1{
+  //  transform: translate(0,0);
+  //  opacity: 1;
+  //}
+  //&:focus &__types p{
+  //  transform: translate(0,0);
+  //  opacity: 1;
+  //}
+  //&:focus &__types .transform-know-more-itemSmall{
+  //  transform: translate(0,0);
+  //  opacity: 1;
+  //}
   &__types{
     position: absolute;
     z-index: 0;
@@ -391,19 +391,19 @@
 //Классы для JS:
 
 .itemSmallTypesJS{
-  background-color: $background-item;
+  background-color: $background-item !important;
 }
 .itemSmallTypesH1JS{
-  transform: translate(0,0);
-  opacity: 1;
+  transform: translate(0,0) !important;
+  opacity: 1 !important;
 }
 .itemSmallTypesPJS{
-  transform: translate(0,0);
-  opacity: 1;
+  transform: translate(0,0) !important;
+  opacity: 1 !important;
 }
 .itemSmallTransformJS{
-  transform: translate(0,0);
-  opacity: 1;
+  transform: translate(0,0) !important;
+  opacity: 1 !important;
 }
 
 ///////////////////////////////////////////////

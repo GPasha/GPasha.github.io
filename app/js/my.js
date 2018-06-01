@@ -181,6 +181,42 @@ $(document).ready(function () {
 
 });
 
+// Делаем анимацию блоков для мобильных устройств.
+
+$(window).on('load', function () {
+
+    var $itemSmall = $(".containerH1-itemSmall");
+
+    var $itemSmallTypes = $(".containerH1-itemSmall__types");
+    var $itemSmallTypesH1 = $(".containerH1-itemSmall__types h1");
+    var $itemSmallTypesP = $(".containerH1-itemSmall__types p");
+    var $itemSmallTransform = $(".transform-know-more-itemSmall");
+
+    // var $itemSmallTypesJS = (".itemSmallTypesJS");
+    // var $itemSmallTypesH1JS = (".itemSmallTypesH1JS");
+    // var $itemSmallTypesPJS = (".itemSmallTypesPJS");
+    // var $itemSmallTransformJS = (".itemSmallTransformJS");
+
+    $itemSmall.on('touch', function () {
+
+        $itemSmallTypes.toggleClass("itemSmallTypesJS");
+
+        //$itemSmallTypesH1.css({"opacity":"1","margin-top":"200px"});
+        //$itemSmallTypesH1.css({"opacity":"1" , "margin-top":"100px"});
+
+        $itemSmallTypesH1.toggleClass("itemSmallTypesH1JS");
+
+        //$itemSmallTypesP.css({"opacity":"1" , "margin-left":"100px"});
+        $itemSmallTypesP.toggleClass("itemSmallTypesPJS");
+
+        $itemSmallTransform.toggleClass("itemSmallTransformJS");
+
+        return false;
+
+    });
+
+});
+
 
 $(window).load(function () {
     // Группы объектов
