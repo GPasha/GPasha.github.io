@@ -10625,23 +10625,9 @@ h3 {
   @media (max-width: 1200px) {
     .containerH1-itemSmall {
       max-width: 100%; } }
-  .containerH1-itemSmall:hover .containerH1-itemSmall__types {
-    background-color: rgba(133, 145, 145, 0.8); }
-  .containerH1-itemSmall:hover .containerH1-itemSmall__types a h1 {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-    opacity: 1; }
-  .containerH1-itemSmall:hover .containerH1-itemSmall__types p {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-    opacity: 1; }
-  .containerH1-itemSmall:hover .containerH1-itemSmall__types .transform-know-more-itemSmall {
-    -webkit-transform: translate(0, 0);
-            transform: translate(0, 0);
-    opacity: 1; }
   .containerH1-itemSmall:active .containerH1-itemSmall__types {
     background-color: rgba(133, 145, 145, 0.8); }
-  .containerH1-itemSmall:active .containerH1-itemSmall__types a h1 {
+  .containerH1-itemSmall:active .containerH1-itemSmall__types h1 {
     -webkit-transform: translate(0, 0);
             transform: translate(0, 0);
     opacity: 1; }
