@@ -560,43 +560,33 @@
 	        <div class="container">
 	            <div class="row">
 	                <div class="call-form col">
+	
 	                    <div class="call-form__title">
 	                        ЧТО ДЕЛАТЬ ДАЛЬШЕ?
 	                    </div>
-	                    <!--<div class="call-form__container">-->
-	                        <!--<div class="call-form__container__text">-->
-	                            <!--Вы можете записаться на замер или назначить встречу в салоне-->
-	                            <!--Мы ответим на все вопросы, просто заполните форму и мы Вам перезвоним-->
-	                        <!--</div>-->
-	                        <!--<form class="call-form__container__form">-->
-	                            <!--<input class="call-form__container__form">-->
-	                        <!--</form>-->
-	                    <!--</div>-->
 	
 	                    <form name="call-form"  method="post" class="call-form__form">
+	
+	                        <input type="hidden" name="sessid" value="1234567890"/>
+	
 	                        <p class="call-form__form__text">
 	                            Вы можете записаться на замер или назначить встречу в салоне.<br>
 	                            Мы ответим на все вопросы, просто заполните форму и мы Вам перезвоним.
 	                        </p>
+	
 	                        <span class="call-form__form__inputs">
 	                            <input class="call-form__form__inputs__input" type="text" name="name" placeholder="Ваше имя" required>
 	                            <input class="call-form__form__inputs__input" type="text" name="phone" placeholder="Ваш телефон" required>
 	                        </span>
+	
 	                        <span class="call-form__form__personal-information">
-	                            <input id="personal-information" class="call-form__form__personal-information__checkbox" type="checkbox" name="personal-information" />
+	                            <input id="personal-information" class="call-form__form__personal-information__checkbox" type="checkbox" name="agreeClb" />
 	                            <label for="personal-information" class="call-form__form__personal-information__checkbox-text">- Я соглашаюсь на обработку персональных даных</label>
 	                        </span>
+	
+	                        <button type="submit" name="button" class="btn btn-outline-primary btn-call-form">Перезвонить мне</button>
+	
 	                    </form>
-	                    <!--<button class="btn btn-outline-primary">Записаться</button>-->
-	                    <button type="button" name="button" class="btn btn-outline-primary btn-call-form">Перезвонить мне</button>
-	                    <!--<form name="form"  method="post" class="form__container">-->
-	                        <!--<div class="form__container__title"><h2>Бесплатный дизайн-проект</h2></div>-->
-	                        <!--<input class="form__container__input" type="text" name="name" placeholder="Ваше имя" required>-->
-	                        <!--<input class="form__container__input" type="text" name="phone" placeholder="Ваш телефон" required>-->
-	                        <!--<input id="personal-information" class="form__container__checkbox" type="checkbox" name="personal-information" />-->
-	                        <!--<label for="personal-information" class="form__container__text">- Я соглашаюсь на обработку персональных даных</label>-->
-	                        <!--<button class="btn btn-outline-primary form__container__button" name="button">ПОЛУЧИТЬ ДИЗАЙН-ПРОЕКТ</button>-->
-	                    <!--</form>-->
 	
 	                </div>
 	            </div>
@@ -663,18 +653,18 @@
 	                    <form class="cont-form__form" action="">
 	                        <div class="row">
 	                            <div class="col-md-5">
-	                                <input class="form-control" type="text" placeholder="Ваше имя">
-	                                <input class="form-control" type="text" placeholder="Ваш телефон">
+	                                <input class="form-control" type="text" placeholder="Ваше имя" name="name">
+	                                <input class="form-control" type="tel" placeholder="Ваш телефон" name="phone">
 	                            </div>
 	                            <div class="col-md-7">
 	                                <fieldset class="form-group d-flex align-items-center justify-content-between flex-wrap">
 	                                    <p class="legend">Дизайн-проект</p>
 	                                    <div class="form-check">
-	                                        <input class="form-check-input" type="radio" id="proekt1" name="project" value="need">
+	                                        <input class="form-check-input" type="radio" id="proekt1" name="project" value="1">
 	                                        <label class="form-check-label" for="proekt1">- Нужен</label>
 	                                    </div>
 	                                    <div class="form-check">
-	                                        <input class="form-check-input" type="radio" id="proekt2" name="project" value="noneed">
+	                                        <input class="form-check-input" type="radio" id="proekt2" name="project" value="0">
 	                                        <label class="form-check-label" for="proekt2">- Уже есть</label>
 	                                    </div>
 	                                </fieldset>
@@ -682,7 +672,7 @@
 	                                    <p class="legend">Контсультация по выбору
 	                                        втраиваемой  техники, мастер-класс</p>
 	                                    <div class="form-check form-check-inline">
-	                                        <input class="form-check-input" type="checkbox" id="tehnika1" name="tehnika" value="need">
+	                                        <input class="form-check-input" type="checkbox" id="tehnika1" name="consult" value="1">
 	                                        <label class="form-check-label" for="tehnika1">- Нужна</label>
 	                                    </div>
 	                                </fieldset>
@@ -690,8 +680,8 @@
 	                            <div class="col-12 text-center accept">
 	                                <div class="form-group">
 	                                    <div class="form-check">
-	                                        <input class="form-check-input" type="checkbox" id="accept">
-	                                        <label class="form-check-label" for="accept">
+	                                        <input class="form-check-input" type="checkbox" id="agreeClb" name="agreeClb">
+	                                        <label class="form-check-label" for="agreeClb">
 	                                            Я соглашаюсь на обработку персональных даных
 	                                        </label>
 	                                    </div>

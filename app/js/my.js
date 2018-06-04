@@ -1,6 +1,8 @@
 $(document).ready(function () {
 
-// GALLERY 3D
+    initForms();
+
+    // GALLERY 3D
     var galleryTop = new Swiper('.gallery-top', {
         effect: 'coverflow',
         //grabCursor: true,
@@ -202,7 +204,7 @@ $(window).on('load', function () {
             var $itemBigTypesP = $(".containerH1-itemBig__types p");
             var $itemBigTransform = $(".containerH1-itemBig__types.transform-know-more-itemSmall");
 
-            $itemSmall.on('touchstart', function () {
+            $itemSmall.on('touch', function () {
 
                 $itemSmallTypes.toggleClass("itemSmallTypesJS");
                 $itemSmallTypesH1.toggleClass("itemSmallTypesH1JS");

@@ -16,4 +16,21 @@
 @import 'call-form';
 
 
+/* SWEETALERT */
+// CONFIRM BUTTON
+$swal2-confirm-button-border: 0;
+$swal2-confirm-button-border-radius: 0;
+$swal2-confirm-button-background-color: $color_red;
+$swal2-confirm-button-color: $color_white;
+$swal2-confirm-button-font-size: $font-size-base;
+// CANCEL BUTTON
+$swal2-cancel-button-border: 0;
+$swal2-cancel-button-border-radius: 0;
+$swal2-cancel-button-background-color: $color_gray_light;
+$swal2-cancel-button-color: $color_white;
+$swal2-cancel-button-font-size: $font-size-base;
+
+@import "../../node_modules/sweetalert2/src/sweetalert2.scss";
+
+
 

@@ -97,6 +97,21 @@ $border-radius:               0;
 $border-radius-lg:            0;
 $border-radius-sm:            0;
 
+
+/* SWEETALERT */
+// CONFIRM BUTTON
+$swal2-confirm-button-border: 0;
+$swal2-confirm-button-border-radius: 0;
+$swal2-confirm-button-background-color: $color_red;
+$swal2-confirm-button-color: $color_white;
+$swal2-confirm-button-font-size: $font-size-base;
+// CANCEL BUTTON
+$swal2-cancel-button-border: 0;
+$swal2-cancel-button-border-radius: 0;
+$swal2-cancel-button-background-color: $color_gray_light;
+$swal2-cancel-button-color: $color_white;
+$swal2-cancel-button-font-size: $font-size-base;
+
 // Подключение нужных SCSS исходников Bootstrap 4
 @import "../../node_modules/bootstrap/scss/bootstrap-reboot";
 @import "../../node_modules/bootstrap/scss/bootstrap-grid";

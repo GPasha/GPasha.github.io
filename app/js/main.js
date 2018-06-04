@@ -8,13 +8,21 @@
 //= ../../node_modules/bootstrap/dist/js/bootstrap.js
 
 // Импортируем другие js-файлы
-//= swiper.min.js
+//= ../../node_modules/sweetalert2/dist/sweetalert2.all.js
+//= ../../node_modules/jquery-mask-plugin/dist/jquery.mask.js
+//= ../../node_modules/jquery-validation/dist/jquery.validate.js
 
 // Импортируем другие js-файлы
-//= jquery.swipebox.js
+//= libs/swiper.min.js
 
 // Импортируем другие js-файлы
-//= scalize.min.js
+//= libs/jquery.swipebox.js
+
+// Импортируем другие js-файлы
+//= libs/scalize.min.js
+
+// Импортируем другие js-файлы
+//= _forms.js
 
 // Импортируем другие js-файлы
 //= my.js
