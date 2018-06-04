@@ -204,7 +204,7 @@ $(window).on('load', function () {
             var $itemBigTypesP = $(".containerH1-itemBig__types p");
             var $itemBigTransform = $(".containerH1-itemBig__types.transform-know-more-itemSmall");
 
-            $itemSmall.on('touch', function () {
+            $itemSmall.on('touchright', function () {
 
                 $itemSmallTypes.toggleClass("itemSmallTypesJS");
                 $itemSmallTypesH1.toggleClass("itemSmallTypesH1JS");
@@ -215,7 +215,7 @@ $(window).on('load', function () {
 
             });
 
-            $itemBig.on('touchstart', function () {
+            $itemBig.on('touchright', function () {
 
                 $itemBigTypes.toggleClass("itemSmallTypesJS");
                 $itemBigTypesH1.toggleClass("itemSmallTypesH1JS");
